@@ -1,0 +1,54 @@
+{"LAYOUTCOMUNICACAO":{
+    "name": "WTA - Buscar Estoque - Ecommerce",
+    "request": {
+        "method": "GET",
+        "header": [
+            {
+                "key": "Authorization",
+                "value": "Bearer {{TOKEN}}"
+            },
+            {
+                "key": "Accept",
+                "value": "*/*"
+            }
+        ],
+        "url": {
+            "raw": "{{URL_BASE}}/api/stock-vtex/v1/available/list",
+            "query": [
+				{
+					"key": "pageSize",
+					"value": "{{PAGE_SIZE}}"
+				},
+				{
+					"key": "page",
+					"value": "{{PAGE}}"
+				},
+                {
+                    "key": "branchId",
+                    "value": "{{FILIAL}}"
+                } ,
+                {
+                    "key": "lastChange",
+                    "value": "{{LAST_CHANGE}}"
+                },
+                {
+                    "key": "usesPackagingSales",
+                    "value": "{{USESPACKAGINGSALES}}"
+                },
+                {
+                    "key": "resale",
+                    "value": "{{REVENDA}}"
+                },
+                {
+                    "key": "merchandiseType",
+                    "value": "{{TIPOMERCADORIA}}"
+                },
+                {
+                    "key": "callOrigin",
+                    "value": "WSH"
+                }
+            ]
+        }
+    },
+    "response": []
+}}

@@ -1,0 +1,50 @@
+{"LAYOUTCOMUNICACAO":{
+    "name": "WTA - Buscar Preco - Ecommerce",
+    "request": {
+        "method": "GET",
+        "header": [
+            {
+                "key": "Authorization",
+                "value": "Bearer {{TOKEN}}"
+            },
+            {
+                "key": "Accept",
+                "value": "*/*"
+            }
+        ],
+        "url": {
+            "raw": "{{URL_BASE}}/api/wholesale/v1/price/discount-policy",
+            "query": [
+				{
+					"key": "pageSize",
+					"value": "{{PAGE_SIZE}}"
+				},
+				{
+					"key": "page",
+					"value": "{{PAGE}}"
+				},
+                {
+                    "key": "branchId",
+                    "value": "{{FILIAL}}"
+                } ,
+                {
+                    "key": "lastChange",
+                    "value": "{{LAST_CHANGE}}"
+                },
+                {
+                    "key": "callOrigin",
+                    "value": "WSH"
+                },
+				{
+					"key": "resale",
+					"value": "{{REVENDA}}"
+				},
+				{
+					"key": "typeOfMerchandise",
+					"value": "{{TIPOMERCADORIA}}"
+				}
+            ]
+        }
+    },
+    "response": []
+}}

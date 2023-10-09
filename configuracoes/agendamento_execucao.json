@@ -1,0 +1,14 @@
+[
+	{
+		"AGENDAMENTOSEGUNDOS": 60,
+		"DELAYINICIALSEGUNDOS": 30,
+		"DESCRICAO": "pdvsync - movimento caixas",
+		"ID": "1"
+	},
+	{
+		"AGENDAMENTOSEGUNDOS": 10,
+		"DELAYINICIALSEGUNDOS": 30,
+		"DESCRICAO": "pdvsync - vendas	",
+		"ID": "2"
+	}
+]

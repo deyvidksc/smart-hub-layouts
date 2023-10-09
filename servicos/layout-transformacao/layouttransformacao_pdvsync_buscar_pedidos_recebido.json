@@ -1,0 +1,60 @@
+{"LAYOUTTRANSFORMACAO":[
+  {
+    "operation": "br.com.totvs.integracao.winthosmarthube.infra.jolt.custom.JoltModifyCustomOperation",
+    "spec": {
+      "data": {
+        "*": {
+          "conteudo": "=base64ToObject"
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "data": {
+        "*": {
+          "conteudo": {
+            "situacaoPreVenda": {
+              "CANCELADA": {
+                "@3": "data_ignore[]"
+              },
+              "*": {
+                "@3": "data[]"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "data": {
+        "*": {
+          "idExterno": "=concat('pdvsync-status-prevenda-',@(1,id),'-',@(1,conteudo.data))",
+          "idPdv": "@(1,id)"
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "data": {
+        "*": {
+          "idExterno": "idExterno",
+          "conteudo": "items[]",
+          "idPdv": "items[&1].idPdv"
+        }
+      }
+    }
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "_attr_access": "items"
+    }
+  }
+]}

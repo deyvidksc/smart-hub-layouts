@@ -1,0 +1,35 @@
+{"LAYOUTCOMUNICACAO":{
+	"name": "WTA -Buscar filiais",
+	"request": {
+		"method": "GET",
+		"header": [
+			{
+				"key": "Authorization",
+				"value": "Bearer {{TOKEN}}"
+			},
+			{
+				"key": "Accept",
+				"value": "*/*"
+			}
+		],
+		"url": {
+			"raw": "{{URL_BASE}}/api/branch/v1/",
+			"query": [
+				{
+					"key": "pageSize",
+					"value": "{{PAGE_SIZE}}"
+				},
+				{
+					"key": "page",
+					"value": "{{PAGE}}"
+				},
+				
+				{
+					"key": "lastChange",
+					"value": "{{LAST_CHANGE}}"
+				}
+			]
+		}
+	},
+	"response": []
+}}

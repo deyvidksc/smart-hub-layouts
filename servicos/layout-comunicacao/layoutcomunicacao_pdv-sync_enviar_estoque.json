@@ -1,0 +1,23 @@
+{"LAYOUTCOMUNICACAO":{
+      "name": "PDV-SYNC Enviar Estoque Disponível",
+      "request": {
+          "method": "POST",
+          "header": [
+          	{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+              {
+                  "key": "Accept",
+                  "value": "*/*"
+              },
+              {
+                  "key": "Content-Type",
+                  "value": "application/json"
+              }
+          ],
+          "url": {
+              "raw": "{{URL_ENVIAR_ESTOQUE_DISPONIVEL}}",
+              "query": []
+          },
+          "bodyraw": "{{CLIENT_JSON}}"
+      },
+      "response": []
+  }}

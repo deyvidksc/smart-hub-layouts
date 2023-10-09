@@ -1,0 +1,34 @@
+{"LAYOUTCOMUNICACAO":{
+    "name": "WTA - Buscar planos de pagamentos",
+    "request": {
+        "method": "GET",
+        "header": [
+            {
+                "key": "Authorization",
+                "value": "Bearer {{TOKEN}}"
+            },
+            {
+                "key": "Accept",
+                "value": "*/*"
+            }
+        ],
+        "url": {
+            "raw": "{{URL_BASE}}/winthor/venda/v0/planos-pagamentos",
+            "query": [
+				{
+						"key": "tamanho",
+						"value": "{{PAGE_SIZE}}"
+				},
+				{
+						"key": "pagina",
+						"value": "{{PAGE}}"
+				} ,
+                {
+                    "key": "dataUltimaAlteracao",
+                    "value": "{{LAST_CHANGE}}"
+                }
+            ]
+        }
+    },
+    "response": []
+}}

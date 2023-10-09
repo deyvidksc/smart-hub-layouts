@@ -1,0 +1,50 @@
+{"LAYOUTCOMUNICACAO":{
+	"name": "WTA - Buscar status pedido",
+	"request": {
+		"method": "GET",
+		"header": [
+			{
+				"key": "Authorization",
+				"value": "Bearer {{TOKEN}}"
+			},
+			{
+				"key": "Accept",
+				"value": "*/*"
+			}
+		],
+		"url": {
+			"raw": "{{URL_BASE}}/api/wholesale/v1/orders/list",
+			"query": [
+				{
+					"key": "pageSize",
+					"value": "{{PAGE_SIZE}}"
+				},
+				{
+					"key": "page",
+					"value": "{{PAGE}}"
+				},
+				{
+					"key": "lastChange",
+					"value": "{{DATAALTERACAO}}"
+				},
+				{
+					"key": "branchId",
+					"value": "{{FILIAL}}"
+				},
+				{
+					"key": "daysOfSearch",
+					"value": "{{DAYSOFSEARCH}}"
+				},
+				{
+					"key": "orderStatus",
+					"value": "{{ORDERSTATUS}}"
+				},
+				{
+					"key": "integrationOrigin",
+					"value": "PDVSYNC"
+				}
+			]
+		}
+	},
+	"response": []
+}}

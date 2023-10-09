@@ -1,0 +1,23 @@
+{"LAYOUTCOMUNICACAO":{
+	"name": "PDV-SYNC Enviar formas de pagamentos (condições de pgmt)",
+	"request": {
+		"method": "POST",
+		"header": [
+			{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+			{
+				"key": "Accept",
+				"value": "*/*"
+			},
+			{
+				"key": "Content-Type",
+				"value": "application/json"
+			}
+		],
+		"url": {
+			"raw": "{{URL_ENVIAR_FORMAS_PGMT}}",
+			"query": []
+		},
+		"bodyraw": "{{CLIENT_JSON}}"
+	},
+	"response": []
+}}

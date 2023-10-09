@@ -1,0 +1,23 @@
+{"LAYOUTCOMUNICACAO":{
+	"name": "WTA - Enviar movimentação caixa",
+	"request": {
+		"method": "POST",
+		"header": [
+		{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+    {
+				"key": "Accept",
+				"value": "*/*"
+			},
+			{
+				"key": "Content-Type",
+				"value": "application/json"
+			}
+		],
+		"url": {
+			"raw": "{{URL_BASE}}/winthor/varejo/v1/movimentacao",
+			"query": []
+		},
+		"bodyraw": "{{CLIENT_JSON}}"
+	},
+	"response": []
+}}

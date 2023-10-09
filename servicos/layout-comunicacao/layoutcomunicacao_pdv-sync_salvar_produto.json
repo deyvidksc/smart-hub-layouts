@@ -1,0 +1,23 @@
+{"LAYOUTCOMUNICACAO":{
+		"name": "PDV-SYNC Salvar Produto",
+		"request": {
+			"method": "POST",
+			"header": [
+				{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+				{
+					"key": "Accept",
+					"value": "*/*"
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"url": {
+				"raw": "{{URL_ENVIAR_PRODUTO}}",
+				"query": []
+			},
+			"bodyraw": "{{CLIENT_JSON}}"
+		},
+		"response": []
+	}}

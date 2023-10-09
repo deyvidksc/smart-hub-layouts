@@ -1,0 +1,18 @@
+{"LAYOUTTRANSFORMACAO":[
+	{
+		"operation": "shift",
+		"spec": {
+			"data": {
+				"loteOrigem": "[].valor"
+			}
+		}
+	},
+	{
+		"operation": "default",
+		"spec": {
+			"*": {
+				"chave": "{{LOTE_ORIGEM}}"
+			}
+		}
+	}
+]}

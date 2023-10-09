@@ -1,0 +1,23 @@
+{"LAYOUTCOMUNICACAO":{
+	"name": "WTA - Enviar Pedido Cancelada",
+	"request": {
+		"method": "DELETE",
+		"header": [
+		    {"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+			{
+				"key": "Accept",
+				"value": "*/*"
+			},
+			{
+				"key": "Content-Type",
+				"value": "application/json"
+			}
+		],
+		"url": {
+			"raw": "{{URL_BASE}}/api/wholesale/v1/orders/pdvsync",
+			"query": []
+		},
+		"bodyraw": "{{CLIENT_JSON}}"
+	},
+	"response": []
+}}

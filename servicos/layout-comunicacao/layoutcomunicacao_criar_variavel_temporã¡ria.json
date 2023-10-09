@@ -1,0 +1,29 @@
+{"LAYOUTCOMUNICACAO":{
+	"name": "PDV-SYNC Criar variavel temporária",
+	"request": {
+		"method": "POST",
+		"header": [
+		    {"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+			{
+				"key": "Accept",
+				"value": "*/*" 
+			},
+			{
+				"key": "Content-Type",
+				"value": "application/json"
+			}
+		],
+		"url": {
+			"raw": "{{BASE_URL_ABRIR_LOTE}}",
+			"query": []
+		},
+		"bodyraw": {
+			"tipoLote": [
+				{{TIPO_LOTE}}
+			],
+			"idInquilino": "{{INQUILINO}}",
+			"status": "InicioEnvio"
+		}
+	},
+	"response": []
+}}
