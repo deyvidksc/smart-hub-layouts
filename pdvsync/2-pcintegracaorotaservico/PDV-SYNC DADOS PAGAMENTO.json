@@ -1,0 +1,23 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "81"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Dados pagamento"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+	"name": "PDV-SYNC Dados pagamento",
+	"request": {
+		"method": "POST",
+		"header": [
+			{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+			{
+				"key": "Accept",
+				"value": "*/*"
+			},
+			{
+				"key": "Content-Type",
+				"value": "application/json"
+			}
+		],
+		"url": {
+			"raw": "{{URL_ENVIAR_DADOS_PAGAMENTO}}",
+			"query": []
+		},
+		"bodyraw": {{CLIENT_JSON}}
+	},
+	"response": []
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : ""},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

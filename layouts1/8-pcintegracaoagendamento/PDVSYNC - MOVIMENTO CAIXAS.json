@@ -1,0 +1,1 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOAGENDAMENTO", "campos" : [{"nome" : "ID", "valor" : "1"},{"nome" : "DESCRICAO", "valor" : "pdvsync - movimento caixas"},{"nome" : "AGENDAMENTOSEGUNDOS", "valor" : "10"},{"nome" : "DELAYINICIALSEGUNDOS", "valor" : "5"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

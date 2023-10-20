@@ -1,0 +1,81 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "77"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDVSync - Buscar Pedidos CANCELADA"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+   "name": "PDVSync - Buscar vendas",
+   "request": {
+       "method": "GET",
+       "header": [
+       	{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+       	{
+				"key": "Accept",
+				"value": "*/*"
+			},
+			{
+				"key": "Content-Type",
+				"value": "application/json"
+			}
+       ],
+       "url": {
+           "raw": "{{URL_CONSULTA_VENDAS}}/{{ID_INQUILINO}}?{{IDSPROPRIETARIO}}",
+           "query": []
+       }
+   },
+   "response": []
+}
+},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
+  {
+    "operation": "br.com.totvs.integracao.winthosmarthube.infra.jolt.custom.JoltModifyCustomOperation",
+    "spec": {
+      "data": {
+        "*": {
+          "conteudo": "=base64ToObject"
+        }
+      }
+    }
+  },
+    {
+    "operation": "shift",
+    "spec": {
+      "data": {
+        "*": {
+          "conteudo": {
+            "situacaoPreVenda": {
+              "CANCELADA": {
+                "@3": "data[]"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "operation": "modify-overwrite-beta",
+    "spec": {
+      "data": {
+        "*": {
+          "idExterno": "=concat('pdvsync-status-prevenda-cancelamento-',@(1,id),'-',@(1,conteudo.data))",
+          "idPdv": "@(1,id)",
+          "offline": true
+        }
+      }
+    }
+  },
+  {
+    "operation": "shift",
+    "spec": {
+      "data": {
+        "*": {
+          "idExterno": "idExterno",
+          "conteudo": "items[]",
+          "idPdv": "items[&1].idPdv",
+          "offline": "items[&1].offline"
+        }
+      }
+    }
+  },
+  {
+    "operation": "default",
+    "spec": {
+      "_attr_access": "items"
+    }
+  }
+]},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "19-JUN-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "S"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

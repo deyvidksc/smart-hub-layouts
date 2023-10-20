@@ -1,0 +1,25 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "12"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "Cadastrar Pedido"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+    "name": "GRAVAR PEDIDO",
+    "request": {
+        "method": "POST",
+        "header": [
+            {
+                "key": "Accept",
+                "value": "{{ACCEPT}}"
+            },
+            {
+                "key": "Content-Type",
+                "value": "{{CONTENT_TYPE}}"
+            },
+            {
+ 								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}"
+            }
+        ],
+        "body": [{{IDEXTERNO}}],
+        "url": {
+            "raw": "{{URL_BASE}}/api/wholesale/v1/customer/"
+        }
+    },
+    "response": []
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : ""},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

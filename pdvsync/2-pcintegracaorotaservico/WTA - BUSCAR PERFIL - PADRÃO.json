@@ -1,0 +1,55 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "41"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA - Buscar Perfil - PADRÃO"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+  "idExterno": [
+    "pdvsync-perfil-0",
+    "pdvsync-perfil-1",
+    "pdvsync-perfil-2"
+  ],
+  "_attr_access": "itens",
+  "itens": [
+    [
+      {
+        "nome": "Administrador WTA",
+        "situacao": 0,
+        "tipoPerfil": "Administrador",
+        "sequencial": 0,
+        "id": 0,
+        "idInquilino": "{{ID_INQUILINO}}",
+        "idRetaguarda": 0,
+        "idProprietario": "{{MASTER_ID_PROPRIETARIO}}",
+        "loteOrigem": "{{LOTE_ORIGEM}}"
+      }
+    ],
+    [
+      {
+        "nome": "Operador WTA",
+        "situacao": 0,
+        "tipoPerfil": "Operador",
+        "sequencial": 0,
+        "id": 1,
+        "idInquilino": "{{ID_INQUILINO}}",
+        "idRetaguarda": 1,
+        "idProprietario": "{{MASTER_ID_PROPRIETARIO}}",
+        "loteOrigem": "{{LOTE_ORIGEM}}"
+      }
+    ],
+    [
+      {
+        "nome": "Vendedor WTA",
+        "situacao": 0,
+        "tipoPerfil": "Vendedor ",
+        "sequencial": 0,
+        "id": 2,
+        "idInquilino": "{{ID_INQUILINO}}",
+        "idRetaguarda": 2,
+        "idProprietario": "{{MASTER_ID_PROPRIETARIO}}",
+        "loteOrigem": "{{LOTE_ORIGEM}}"
+      }
+    ]
+  ]
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
+  {
+    "operation": "default",
+    "spec": {}
+  }
+]
+},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "27-JUL-22"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

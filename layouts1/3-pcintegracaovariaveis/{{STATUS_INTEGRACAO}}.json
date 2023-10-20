@@ -1,0 +1,3 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOVARIAVEIS", "campos" : [{"nome" : "DTULTALTER", "valor" : ""},{"nome" : "CODEMPALTER", "valor" : ""},{"nome" : "ID", "valor" : "392"},{"nome" : "CHAVE", "valor" : "{{STATUS_INTEGRACAO}}"},{"nome" : "TIPOCHAVE", "valor" : "BODY"},{"nome" : "TIPOVALOR", "valor" : "SELECT"},{"nome" : "IDROTASERVICO", "valor" : "72"},{"nome" : "VALOR", "valor" : "SELECT 
+	(CASE WHEN STATUS IN (1,2) THEN 1 ELSE 2 END) AS RESULT
+FROM PCINTEGRACAOCORE p WHERE ID = :IDINTEGRACAOCORE"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

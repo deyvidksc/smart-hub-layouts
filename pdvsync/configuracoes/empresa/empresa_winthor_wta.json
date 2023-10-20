@@ -1,9 +1,0 @@
-{
-	"DTSOLICITACAOTOKEN": "26/07/23",
-	"ID": "1",
-	"NOME": "winthor/wta",
-	"TOKENCLIENTE": "",
-	"TOKENTEMPOEXPIRACAO": "3600",
-	"URLBASE": "http://localhost:8989",
-	"WTA": "S"
-}

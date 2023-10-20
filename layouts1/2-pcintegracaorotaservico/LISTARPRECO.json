@@ -1,0 +1,59 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "8"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "ListarPreco"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+					"name": "Listar Preço",
+					"request": {
+						"method": "GET",
+						"header": [
+              {
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+              {
+ 								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}"
+              }
+            ],
+						"url": {
+							"raw": "{{URL_BASE}}/api/wholesale/v1/price/list",
+							"host": [
+								"{{URL_BASE}}"
+							],
+							"path": [
+								"api",
+								"wholesale",
+								"v1",
+								"price",
+								"list"
+							],
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "{{PAGESIZE}}"
+								},
+								{
+									"key": "page",
+									"value": "{{PAGE}}"
+								},
+								{
+									"key": "customerId",
+									"value": "{{CUSTOMERID}}",
+									"disabled": true
+								},
+								{
+									"key": "productSKUERPReferenceKey",
+									"value": "{{PRODUCTSKUERPREFERENCEKEY}}",
+									"disabled": true
+								},
+								{
+									"key": "lastChange",
+									"value": "{{LASTCHANGE}}",
+									"disabled": true
+								},
+								{
+									"key": "branchId",
+									"value": "{{BRANCHID}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : ""},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

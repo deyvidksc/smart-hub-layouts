@@ -1,0 +1,31 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "56"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Enviar Preco Produto"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+	"name": "PDV-SYNC Enviar Preco Produtos",
+	"request": {
+		"method": "POST",
+		"header": [
+			{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+			{
+				"key": "Accept",
+				"value": "*/*"
+			},
+			{
+				"key": "Content-Type",
+				"value": "application/json"
+			}
+		],
+		"url": {
+			"raw": "{{URL_ENVIAR_PRECO_PRODUTOS}}",
+			"query": []
+		},
+		"bodyraw": {{CLIENT_JSON}}
+	},
+	"response": []
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
+		{
+			"operation": "default",
+			"spec": {
+				"status": 2
+			}
+		}
+	]
+	},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "01-JUL-22"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

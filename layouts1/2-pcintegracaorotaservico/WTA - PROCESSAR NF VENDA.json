@@ -1,0 +1,46 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "24"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA - Processar NF Venda"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+    "name": "Inserir NFe Venda",
+    "request": {
+        "method": "POST",
+        "header": [
+            {
+                "key": "Accept",
+                "value": "*/*"
+            },
+            {
+                "key": "Content-Type",
+                "value": "application/json"
+            },
+            {
+ 								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}"
+            }
+        ],
+        "body": [
+                {
+                    "key": "nfeJson",
+                    "value": {{NFEJSON}}
+                },
+                {
+                    "key": "tipoNotaDeposito",
+                    "value": "SALE"
+                },
+                {
+                    "key": "codigoUsuario",
+                    "value": "191"
+                },
+                {
+                    "key": "numeroPedido",
+                    "value": "{{NUMEROPEDIDO}}"
+                },
+                {
+                    "key": "codigoCobranca",
+                    "value": "MLB"
+                }
+            ],        
+        "url": {
+            "raw": "{{URL_BASE}}/winthor/vendas/faturamento/v0/warehouse/sale/"
+        }
+    },
+    "response": []
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "11-MAR-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
