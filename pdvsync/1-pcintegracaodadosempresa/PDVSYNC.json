@@ -1,0 +1,41 @@
+{
+	"tabela": {
+		"nome": "PCINTEGRACAODADOSEMPRESA",
+		"campos": [
+			{
+				"nome": "TOKENTEMPOEXPIRACAO",
+				"valor": "3600"
+			},
+			{
+				"nome": "ID",
+				"valor": "4"
+			},
+			{
+				"nome": "NOME",
+				"valor": "PDVSYNC"
+			},
+			{
+				"nome": "URLBASE",
+				"valor": ""
+			},
+			{
+				"nome": "TOKENCLIENTE",
+				"valor": ""
+			},
+			{
+				"nome": "CODFILIAL",
+				"valor": ""
+			},
+			{
+				"nome": "WTA",
+				"valor": "N"
+			},
+			{
+				"nome": "DTSOLICITACAOTOKEN",
+				"valor": "15-OCT-23"
+			}
+		]
+	},
+	"versaoArquivo": "1.0.0",
+	"nomeArquivo": "teste"
+}
