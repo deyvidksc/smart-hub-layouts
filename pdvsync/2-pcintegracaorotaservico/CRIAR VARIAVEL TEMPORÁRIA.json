@@ -19,7 +19,7 @@
 		},
 		"bodyraw": {
 			"tipoLote": [
-				{{TIPO_LOTE}}
+				"{{TIPO_LOTE}}"
 			],
 			"idInquilino": "{{INQUILINO}}",
 			"status": "InicioEnvio"
