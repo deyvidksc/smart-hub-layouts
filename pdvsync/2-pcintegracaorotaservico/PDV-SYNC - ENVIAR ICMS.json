@@ -17,13 +17,13 @@
 			"raw": "{{URL_ENVIAR_ICMS}}",
 			"query": []
 		},
-		"bodyraw": {{CLIENT_JSON}}
+		"bodyraw": "{{CLIENT_JSON}}"
 	}
 }},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
 	{
 		"operation": "default",
 		"spec": {
-			"status": 2
+			"status": "2"
 		}
 	}
 ]},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "29-JAN-22"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

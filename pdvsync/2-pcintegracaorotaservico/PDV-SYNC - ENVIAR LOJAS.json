@@ -17,7 +17,7 @@
 			"raw": "{{URL_ENVIAR_LOJAS}}",
 			"query": []
 		},
-		"bodyraw": {{CLIENT_JSON}}
+		"bodyraw": "{{CLIENT_JSON}}"
 	}
 }},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
 	{

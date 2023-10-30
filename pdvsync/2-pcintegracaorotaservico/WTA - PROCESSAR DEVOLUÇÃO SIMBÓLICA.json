@@ -19,7 +19,7 @@
         "body": [
                 {
                     "key": "nfeJson",
-                    "value": {{NFEJSON}}
+                    "value": "{{NFEJSON}}"
                 },
                 {
                     "key": "tipoNotaDeposito",
