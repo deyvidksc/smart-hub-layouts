@@ -16,7 +16,9 @@
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
-				"valor": { "\"name\": \"GRAVAR PEDIDO" }
+				"valor": {
+					"name": "GRAVAR PEDIDO"
+				}
 			},
 			{
 				"nome": "LAYOUTTRANSFORMACAO",

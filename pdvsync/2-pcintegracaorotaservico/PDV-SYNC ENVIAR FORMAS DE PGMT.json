@@ -1,31 +1,81 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "62"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Enviar formas de pgmt"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
-	"name": "PDV-SYNC Enviar formas de pagamentos (condições de pgmt)",
-	"request": {
-		"method": "POST",
-		"header": [
-			{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+{
+	"tabela": {
+		"nome": "PCINTEGRACAOROTASERVICO",
+		"campos": [
 			{
-				"key": "Accept",
-				"value": "*/*"
+				"nome": "ID",
+				"valor": "62"
 			},
 			{
-				"key": "Content-Type",
-				"value": "application/json"
+				"nome": "IDEMPRESAAPI",
+				"valor": "4"
+			},
+			{
+				"nome": "SERVICO",
+				"valor": "PDV-SYNC Enviar formas de pgmt"
+			},
+			{
+				"nome": "LAYOUTCOMUNICACAO",
+				"valor": {
+					"name": "PDV-SYNC Enviar formas de pagamentos (condições de pgmt)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{URL_ENVIAR_FORMAS_PGMT}}",
+							"query": []
+						},
+						"bodyraw": "{{CLIENT_JSON}}"
+					},
+					"response": []
+				}
+			},
+			{
+				"nome": "LAYOUTTRANSFORMACAO",
+				"valor": [
+					{
+						"operation": "default",
+						"spec": {
+							"status": 2
+						}
+					}
+				]
+			},
+			{
+				"nome": "ATIVO",
+				"valor": "N"
+			},
+			{
+				"nome": "AUTENTICADOR",
+				"valor": "N"
+			},
+			{
+				"nome": "DATASINCRONISMO",
+				"valor": "01-JUL-22"
+			},
+			{
+				"nome": "REFRESHTOKEN",
+				"valor": "N"
+			},
+			{
+				"nome": "WINTHORPAGINACAO",
+				"valor": "N"
 			}
-		],
-		"url": {
-			"raw": "{{URL_ENVIAR_FORMAS_PGMT}}",
-			"query": []
-		},
-		"bodyraw": {{CLIENT_JSON}}
+		]
 	},
-	"response": []
-}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
-		{
-			"operation": "default",
-			"spec": {
-				"status": 2
-			}
-		}
-	]
-	},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "01-JUL-22"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+	"versaoArquivo": "1.0.0",
+	"nomeArquivo": "teste"
+}

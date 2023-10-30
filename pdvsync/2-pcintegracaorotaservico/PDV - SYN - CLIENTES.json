@@ -1,39 +1,90 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "31"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDV - SYN - Clientes"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
-	"name": "PDV-SYNC Salvar Clientes",
-	"request": {
-		"method": "POST",
-		"header": [
-		    {"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+{
+	"tabela": {
+		"nome": "PCINTEGRACAOROTASERVICO",
+		"campos": [
 			{
-				"key": "Accept",
-				"value": "*/*"
+				"nome": "ID",
+				"valor": "31"
 			},
 			{
-				"key": "Content-Type",
-				"value": "application/json"
-			}  
-		],
-		"url": {
-			"raw": "{{URL_ENVIAR_CLIENTE}}",
-			"query": [
-				{
-					"key": "pageSize",
-					"value": "{{PAGE_SIZE}}"
-				},
-				{
-					"key": "page",
-					"value": "{{PAGE}}"
+				"nome": "IDEMPRESAAPI",
+				"valor": "4"
+			},
+			{
+				"nome": "SERVICO",
+				"valor": "PDV - SYN - Clientes"
+			},
+			{
+				"nome": "LAYOUTCOMUNICACAO",
+				"valor": {
+					"name": "PDV-SYNC Salvar Clientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{URL_ENVIAR_CLIENTE}}",
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "{{PAGE_SIZE}}"
+								},
+								{
+									"key": "page",
+									"value": "{{PAGE}}"
+								}
+							]
+						},
+						"bodyraw": "{{CLIENT_JSON}}"
+					},
+					"response": []
 				}
-			]
-		},
-		"bodyraw": {{CLIENT_JSON}}
+			},
+			{
+				"nome": "LAYOUTTRANSFORMACAO",
+				"valor": [
+					{
+						"operation": "default",
+						"spec": {
+							"status": 2
+						}
+					}
+				]
+			},
+			{
+				"nome": "ATIVO",
+				"valor": "S"
+			},
+			{
+				"nome": "AUTENTICADOR",
+				"valor": "N"
+			},
+			{
+				"nome": "DATASINCRONISMO",
+				"valor": "29-JAN-22"
+			},
+			{
+				"nome": "REFRESHTOKEN",
+				"valor": ""
+			},
+			{
+				"nome": "WINTHORPAGINACAO",
+				"valor": "N"
+			}
+		]
 	},
-	"response": []
-}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
-	{
-		"operation": "default",
-		"spec": {
-			"status": 2
-		}
-	}
-]},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "29-JAN-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+	"versaoArquivo": "1.0.0",
+	"nomeArquivo": "teste"
+}

@@ -1,29 +1,80 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "37"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDV-SYNC - Enviar compartilhamentos"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
-	"name": " ",
-	"request": {
-		"method": "POST",
-		"header": [
-		    {"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+{
+	"tabela": {
+		"nome": "PCINTEGRACAOROTASERVICO",
+		"campos": [
 			{
-				"key": "Accept",
-				"value": "*/*"
+				"nome": "ID",
+				"valor": "37"
 			},
 			{
-				"key": "Content-Type",
-				"value": "application/json"
+				"nome": "IDEMPRESAAPI",
+				"valor": "4"
+			},
+			{
+				"nome": "SERVICO",
+				"valor": "PDV-SYNC - Enviar compartilhamentos"
+			},
+			{
+				"nome": "LAYOUTCOMUNICACAO",
+				"valor": {
+					"name": " ",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{URL_ENVIAR_COMPARTILHAMENTO}}",
+							"query": []
+						},
+						"bodyraw": "{{CLIENT_JSON}}"
+					}
+				}
+			},
+			{
+				"nome": "LAYOUTTRANSFORMACAO",
+				"valor": [
+					{
+						"operation": "default",
+						"spec": {
+							"status": 2
+						}
+					}
+				]
+			},
+			{
+				"nome": "ATIVO",
+				"valor": "N"
+			},
+			{
+				"nome": "AUTENTICADOR",
+				"valor": "N"
+			},
+			{
+				"nome": "DATASINCRONISMO",
+				"valor": "29-JAN-22"
+			},
+			{
+				"nome": "REFRESHTOKEN",
+				"valor": "N"
+			},
+			{
+				"nome": "WINTHORPAGINACAO",
+				"valor": "N"
 			}
-		],
-		"url": {
-			"raw": "{{URL_ENVIAR_COMPARTILHAMENTO}}",
-			"query": []
-		},
-		"bodyraw": {{CLIENT_JSON}}
-	}
-}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
-	{
-		"operation": "default",
-		"spec": {
-			"status": 2
-		}
-	}
-]},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "29-JAN-22"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+		]
+	},
+	"versaoArquivo": "1.0.0",
+	"nomeArquivo": "teste"
+}
