@@ -1,5 +1,5 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "8"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "ListarPreco"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
-					"name": "Listar Preço",
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "8"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "ListarPreco"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+					"name": "Listar PreÃ§o",
 					"request": {
 						"method": "GET",
 						"header": [

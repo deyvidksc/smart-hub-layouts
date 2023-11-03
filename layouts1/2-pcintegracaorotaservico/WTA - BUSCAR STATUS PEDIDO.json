@@ -1,10 +1,59 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "75"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA - Buscar status pedido"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : ""},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "73"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - Buscar status pedido"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+	"name": "WTA - Buscar status pedido",
+	"request": {
+		"method": "GET",
+		"header": [
+			{
+				"key": "Authorization",
+				"value": "Bearer {{TOKEN}}"
+			},
+			{
+				"key": "Accept",
+				"value": "*/*"
+			}
+		],
+		"url": {
+			"raw": "{{URL_BASE}}/api/wholesale/v1/orders/list",
+			"query": [
+				{
+					"key": "pageSize",
+					"value": "{{PAGE_SIZE}}"
+				},
+				{
+					"key": "page",
+					"value": "{{PAGE}}"
+				},
+				{
+					"key": "lastChange",
+					"value": "{{DATAALTERACAO}}"
+				},
+				{
+					"key": "branchId",
+					"value": "{{FILIAL}}"
+				},
+				{
+					"key": "daysOfSearch",
+					"value": "{{DAYSOFSEARCH}}"
+				},
+				{
+					"key": "orderStatus",
+					"value": "{{ORDERSTATUS}}"
+				},
+				{
+					"key": "integrationOrigin",
+					"value": "PDVSYNC"
+				}
+			]
+		}
+	},
+	"response": []
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
   {
-    "operation": "br.com.totvs.integracao.winthosmarthube.infra.jolt.custom.JoltModifyCustomOperation",
+    "operation": "modify-overwrite-beta",
     "spec": {
-      "data": {
+      "items": {
         "*": {
-          "conteudo": "=base64ToObject"
+          "idExterno": "=concat('pdvsync-status-prevenda-',@(1,orderId),'-',@(1,lastChange))"
         }
       }
     }
@@ -12,16 +61,19 @@
   {
     "operation": "shift",
     "spec": {
-      "data": {
+      "items": {
         "*": {
-          "conteudo": {
-            "situacaoPreVenda": {
-              "CANCELADA": {
-                "@3": "data_ignore[]"
-              },
-              "*": {
-                "@3": "data[]"
-              }
+          "idExterno": "idExterno[]",
+          "orderId": "items.[&1].idRetaguarda",
+          "branchId": "items.[&1].idProprietario",
+          "orderStatus": {
+            "C": {
+              "#0": "items.[&3].situacao",
+              "#CANCELADA": "items.[&3].situacaoPreVenda"
+            },
+            "F": {
+              "#1": "items.[&3].situacao",
+              "#RESGATADA": "items.[&3].situacaoPreVenda"
             }
           }
         }
@@ -29,32 +81,16 @@
     }
   },
   {
-    "operation": "modify-overwrite-beta",
-    "spec": {
-      "data": {
-        "*": {
-          "idExterno": "=concat('pdvsync-status-prevenda-',@(1,id),'-',@(1,conteudo.data))",
-          "idPdv": "@(1,id)"
-        }
-      }
-    }
-  },
-  {
-    "operation": "shift",
-    "spec": {
-      "data": {
-        "*": {
-          "idExterno": "idExterno",
-          "conteudo": "items[]",
-          "idPdv": "items[&1].idPdv"
-        }
-      }
-    }
-  },
-  {
     "operation": "default",
     "spec": {
-      "_attr_access": "items"
+      "_attr_access": "items",
+      "items[]": {
+        "*": {
+          "idInquilino": "{{ID_INQUILINO}}",
+          "loteOrigem": "{{LOTE_ORIGEM}}"
+        }
+      }
     }
   }
-]},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "03-MAR-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+]
+},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "01-NOV-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

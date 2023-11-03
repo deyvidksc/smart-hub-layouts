@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "30"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA -Buscar Clientes"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "30"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA -Buscar Clientes"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": "WTA -Buscar produtos",
 	"request": {
 		"method": "GET",
@@ -56,6 +56,7 @@
           "idExterno": "idExterno[]",
           "id": "items.[&1].idRetaguarda",
           "name": "items.[&1].nome",
+          "active": "items.[&1].situacao",
           "deliveryAddress": "items.[&1].endereco",
           "addressInfo": "items.[&1].complemento",
           "deliveryDistrict": "items.[&1].bairro",
@@ -81,7 +82,6 @@
       "_attr_access": "items",
       "items[]": {
         "*": {
-          "situacao": 1,
           "enviarpnet": 0,
           "dataNascimento": "1900-01-01T00:00:00",
           "idInquilino": "{{ID_INQUILINO}}",
@@ -93,5 +93,4 @@
       }
     }
 	}
-]
-},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "31-MAR-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+]},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "01-NOV-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "S"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

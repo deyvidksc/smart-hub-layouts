@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "59"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA - Buscar planos de pgmt"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "59"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - Buscar planos de pgmt"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
     "name": "WTA - Buscar planos de pagamentos",
     "request": {
         "method": "GET",
@@ -111,29 +111,27 @@
             "*": { "#0": "items.[&3].situacao" }
           },
           "diasEntreParcelas": "items.[&1].diasEntreParcelas",
-          "prazoMaximoPrimeiraParcela": "items.[&1].prazoMaximoPrimeiraParcela"
+          "prazoMaximoPrimeiraParcela": "items.[&1].PrazoMaximoPrimeiraParcela"
         }
       }
     }
   },
-  {
+    {
     "operation": "default",
     "spec": {
       "_attr_access": "items",
       "items[]": {
-        "*[]": {
-          "*": {
-            "idInquilino": "{{ID_INQUILINO}}",
-            "loteOrigem": "{{LOTE_ORIGEM}}",
-            "situacao": 1,
-            "percentualMinimoEntrada": 0,
-            "tipoDadoComplementar": 0,
-            "dadoComplementarDescricao": ""
-          }
+        "*": {
+          "idInquilino": "{{ID_INQUILINO}}",
+          "loteOrigem": "{{LOTE_ORIGEM}}",
+          "situacao": 1,
+          "percentualMinimoEntrada": 0,
+          "tipoDadoComplementar": 0,
+          "dadoComplementarDescricao": ""
         }
       }
     }
 	 }
 ]
 
-},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "10-OCT-23"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "01-NOV-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "S"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

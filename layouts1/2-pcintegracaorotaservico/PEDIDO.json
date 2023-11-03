@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "25"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA - Processar Cliente/Pedido"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "25"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - Processar Cliente/Pedido"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
     "name": "WTA - Processar Cliente/Pedido",
     "request": {
         "method": "POST",
@@ -27,4 +27,4 @@
         }
     },
     "response": []
-}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "11-MAR-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "11-MAR-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

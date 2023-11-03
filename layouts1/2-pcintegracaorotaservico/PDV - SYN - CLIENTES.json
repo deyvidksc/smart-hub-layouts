@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "31"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDV - SYN - Clientes"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "31"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDV - SYN - Clientes"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": "PDV-SYNC Salvar Clientes",
 	"request": {
 		"method": "POST",
@@ -11,7 +11,7 @@
 			{
 				"key": "Content-Type",
 				"value": "application/json"
-			}  
+			}
 		],
 		"url": {
 			"raw": "{{URL_ENVIAR_CLIENTE}}",

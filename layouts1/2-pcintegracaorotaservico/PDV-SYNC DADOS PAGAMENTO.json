@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "81"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Dados pagamento"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "81"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Dados pagamento"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": "PDV-SYNC Dados pagamento",
 	"request": {
 		"method": "POST",

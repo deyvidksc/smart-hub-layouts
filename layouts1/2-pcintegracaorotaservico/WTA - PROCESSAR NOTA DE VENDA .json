@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "13"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA - Processar nota de venda "},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "13"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - Processar nota de venda "},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
     "name": "PROCESSAR NOTA",
     "request": {
         "method": "POST",
@@ -164,7 +164,7 @@
               }
               //    "infAdProd": "infAdProd"
             },
-            // imposto de um único produto do xml
+            // imposto de um Ãºnico produto do xml
             "imposto": {
               "vTotTrib": "pedidoVendaDto.listOfOrderItem[0].impostoDto.taxVtottrib",
               "ICMS": {

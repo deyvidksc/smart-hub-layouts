@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "45"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA -Buscar Pis/Cofins"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "45"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA -Buscar Pis/Cofins"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": "WTA -Buscar Pis/Cofins",
 	"request": {
 		"method": "GET",
@@ -40,7 +40,7 @@
         "*": {
           "CEM": 100,
           "idExterno": "=concat('pdvsync-piscofins-', @(1,codTribPisCofins),'-', @(1,dtUltAlt))",
-          /* JOLT n„o possui uma funÁ„o nativa para multiplicar valores. */
+          /* JOLT n√£o possui uma fun√ß√£o nativa para multiplicar valores. */
           /* mas tem como multiplicar usando dessa forma: */
           /* https://intercom.help/godigibee/en/articles/4239806-transformations-with-jolt */
           "valorInverso": "=divide(1, @(1,CEM))",
@@ -88,4 +88,4 @@
     }
   }
 ]
-},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "23-MAY-22"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "23-MAY-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "S"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

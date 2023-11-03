@@ -1,5 +1,5 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "54"},{"nome" : "IDEMPRESAAPI", "valor" : "4"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Enviar Estoque"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
-      "name": "PDV-SYNC Enviar Estoque Disponível",
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "54"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Enviar Estoque"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+      "name": "PDV-SYNC Enviar Estoque DisponÃ­vel",
       "request": {
           "method": "POST",
           "header": [
@@ -28,4 +28,4 @@
 			}
 		}
 	]
-	},{"nome" : "ATIVO", "valor" : "N"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "01-JUL-22"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+	},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "17-MAR-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : ""} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

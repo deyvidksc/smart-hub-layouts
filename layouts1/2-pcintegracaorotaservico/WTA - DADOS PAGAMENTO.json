@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "80"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA - Dados pagamento"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "80"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - Dados pagamento"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
   "idExterno": [
     "pdvsync-dado-complementar-pagto-11",
     "pdvsync-dado-complementar-pagto-12"
@@ -7,7 +7,7 @@
   "itens": [
 	[
 	   {
-	      "descricao": "Código de autorização",
+	      "descricao": "CÃ³digo de autorizaÃ§Ã£o",
 	      "tipoDadoComplementar": 1,
 	      "obrigatorio": 1,
 	      "tamanho": 25,
@@ -38,4 +38,4 @@
     "spec": {}
   }
 ]
-},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "10-OCT-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "01-NOV-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

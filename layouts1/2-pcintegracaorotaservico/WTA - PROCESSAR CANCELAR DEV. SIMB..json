@@ -1,5 +1,5 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "21"},{"nome" : "IDEMPRESAAPI", "valor" : "1"},{"nome" : "SERVICO", "valor" : "WTA - Processar Cancelar Dev. Simb."},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
-    "name": "Inserir NFe Transferência",
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "21"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - Processar Cancelar Dev. Simb."},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+    "name": "Inserir NFe TransferÃªncia",
     "request": {
         "method": "POST",
         "header": [
