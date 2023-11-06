@@ -1,0 +1,35 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "6"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - LoginWTA"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+	"name": "Usuario - Login",
+	"request": {
+		"method": "POST",
+		"header": [
+			{
+				"key": "Content-Type",
+				"value": "application/json"
+			}
+		],
+		"body": [
+			{
+				"key": "login",
+				"value": "{{LOGIN}}"
+			},
+			{
+				"key": "senha",
+				"value": "{{SENHA}}"
+			}
+		],
+		"url": {
+			"raw": "{{URL_BASE}}/winthor/autenticacao/v1/login",
+			"host": [
+				"{{URL_BASE}}"
+			],
+			"path": [
+				"winthor",
+				"autenticacao",
+				"v1",
+				"login"
+			]
+		}
+	},
+	"response": []
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "S"},{"nome" : "DATASINCRONISMO", "valor" : "11-MAR-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
