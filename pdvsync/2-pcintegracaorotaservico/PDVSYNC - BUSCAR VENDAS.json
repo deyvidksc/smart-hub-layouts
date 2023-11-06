@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "66"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDVSync - Buscar vendas"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "0"},{"nome" : "IDEMPRESAAPI", "valor" : "0"},{"nome" : "SERVICO", "valor" : "PDVSync - Buscar vendas"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
     "name": "PDVSync - Buscar vendas",
     "request": {
         "method": "GET",

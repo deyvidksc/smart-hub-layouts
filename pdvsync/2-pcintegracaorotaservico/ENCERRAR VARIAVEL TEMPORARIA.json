@@ -4,11 +4,11 @@
 		"campos": [
 			{
 				"nome": "ID",
-				"valor": "33"
+				"valor": "0"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
-				"valor": "PDVSYNC"
+				"valor": "0"
 			},
 			{
 				"nome": "SERVICO",
