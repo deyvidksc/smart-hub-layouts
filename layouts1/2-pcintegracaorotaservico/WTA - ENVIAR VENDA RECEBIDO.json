@@ -17,7 +17,7 @@
 			"raw": "{{URL_BASE}}/api/wholesale/v1/orders/pdvsync",
 			"query": []
 		},
-		"bodyraw": {{CLIENT_JSON}}
+		"bodyraw": "{{CLIENT_JSON}}"
 	},
 	"response": []
 }},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [

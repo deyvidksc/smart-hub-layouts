@@ -4,7 +4,7 @@
 		"campos": [
 			{
 				"nome": "ID",
-				"valor": "DFSEQ_PCINTEGRACAOROTASERVICO.NEXTVAL"
+				"valor": "0"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
