@@ -1,81 +1,31 @@
-{
-	"tabela": {
-		"nome": "PCINTEGRACAOROTASERVICO",
-		"campos": [
-			{
-				"nome": "ID",
-				"valor": "0"
-			},
-			{
-				"nome": "IDEMPRESAAPI",
-				"valor": "PDVSYNC"
-			},
-			{
-				"nome": "SERVICO",
-				"valor": "PDV-SYNC Salvar Produto"
-			},
-			{
-				"nome": "LAYOUTCOMUNICACAO",
-				"valor": {
-					"name": "PDV-SYNC Salvar Produto",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Authorization",
-								"value": "Bearer {{TOKEN}}"
-							},
-							{
-								"key": "Accept",
-								"value": "*/*"
-							},
-							{
-								"key": "Content-Type",
-								"value": "application/json"
-							}
-						],
-						"url": {
-							"raw": "{{URL_ENVIAR_PRODUTO}}",
-							"query": []
-						},
-						"bodyraw": "{{CLIENT_JSON}}"
-					},
-					"response": []
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "52"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Salvar Produto"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+		"name": "PDV-SYNC Salvar Produto",
+		"request": {
+			"method": "POST",
+			"header": [
+				{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+				{
+					"key": "Accept",
+					"value": "*/*"
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json"
 				}
+			],
+			"url": {
+				"raw": "{{URL_ENVIAR_PRODUTO}}",
+				"query": []
 			},
-			{
-				"nome": "LAYOUTTRANSFORMACAO",
-				"valor": [
-					{
-						"operation": "default",
-						"spec": {
-							"status": 2
-						}
-					}
-				]
-			},
-			{
-				"nome": "ATIVO",
-				"valor": "N"
-			},
-			{
-				"nome": "AUTENTICADOR",
-				"valor": "N"
-			},
-			{
-				"nome": "DATASINCRONISMO",
-				"valor": "01-JUL-22"
-			},
-			{
-				"nome": "REFRESHTOKEN",
-				"valor": "N"
-			},
-			{
-				"nome": "WINTHORPAGINACAO",
-				"valor": "N"
+			"bodyraw": {{CLIENT_JSON}}
+		},
+		"response": []
+	}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
+		{
+			"operation": "default",
+			"spec": {
+				"status": 2
 			}
-		]
-	},
-	"versaoArquivo": "1.0.0",
-	"nomeArquivo": "teste"
-}
+		}
+	]
+	},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "17-MAR-23"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "ORDEMEXECUCAO", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : ""} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }

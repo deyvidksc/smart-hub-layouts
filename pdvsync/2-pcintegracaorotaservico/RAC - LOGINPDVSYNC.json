@@ -1,97 +1,32 @@
-{
-	"tabela": {
-		"nome": "PCINTEGRACAOROTASERVICO",
-		"campos": [
-			{
-				"nome": "ID",
-				"valor": "0"
-			},
-			{
-				"nome": "IDEMPRESAAPI",
-				"valor": "PDVSYNC"
-			},
-			{
-				"nome": "SERVICO",
-				"valor": "RAC - LoginPDVSync"
-			},
-			{
-				"nome": "LAYOUTCOMUNICACAO",
-				"valor": {
-					"name": "RAC - Login PDVSync",
-					"request": {
-						"method": "POST",
-						"header": [
-							{
-								"key": "Content-Type",
-								"value": "application/x-www-form-urlencoded"
-							}
-						],
-						"url": {
-							"raw": "{{URL_RAC_PDVSYNC}}"
-						},
-						"body": [
-							{
-								"key": "grant_type",
-								"value": "password"
-							},
-							{
-								"key": "username",
-								"value": "{{USERNAME}}"
-							},
-							{
-								"key": "password",
-								"value": "{{PASSWORD}}"
-							},
-							{
-								"key": "scope",
-								"value": "authorization_api"
-							},
-							{
-								"key": "client_id",
-								"value": "{{CLIENT_ID}}"
-							},
-							{
-								"key": "client_secret",
-								"value": "{{CLIENT_SECRET}}"
-							}
-						]
-					},
-					"response": []
-				}
-			},
-			{
-				"nome": "LAYOUTTRANSFORMACAO",
-				"valor": [
-					{
-						"operation": "shift",
-						"spec": {
-							"access_token": "access_token"
-						}
-					}
-				]
-			},
-			{
-				"nome": "ATIVO",
-				"valor": "S"
-			},
-			{
-				"nome": "AUTENTICADOR",
-				"valor": "S"
-			},
-			{
-				"nome": "DATASINCRONISMO",
-				"valor": "11-MAR-22"
-			},
-			{
-				"nome": "REFRESHTOKEN",
-				"valor": ""
-			},
-			{
-				"nome": "WINTHORPAGINACAO",
-				"valor": "N"
-			}
-		]
-	},
-	"versaoArquivo": "1.0.0",
-	"nomeArquivo": "teste"
-}
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "68"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "RAC - LoginPDVSync"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+    "name": "RAC - Login PDVSync",
+    "request": {
+        "method": "POST",
+        "header": [
+            {
+                "key": "Content-Type",
+                "value": "application/x-www-form-urlencoded"
+            }
+        ],
+        "url": {
+            "raw": "{{URL_RAC_PDVSYNC}}"
+        },
+        "body": [ 
+            {"key": "grant_type","value": "password"  },
+            {"key": "username","value": "{{USERNAME}}"  },
+            {"key": "password","value": "{{PASSWORD}}"  },
+            {"key": "scope","value": "authorization_api"  },
+            {"key": "client_id","value": "{{CLIENT_ID}}"  },
+            {"key": "client_secret","value": "{{CLIENT_SECRET}}"  }
+        ]
+    },
+    "response": []
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
+  {
+    "operation": "shift",
+    "spec": {
+      "access_token": "access_token"
+    }
+  }
+]
+},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "S"},{"nome" : "DATASINCRONISMO", "valor" : "11-MAR-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "ORDEMEXECUCAO", "valor" : "1"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
