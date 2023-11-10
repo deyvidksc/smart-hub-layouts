@@ -12,15 +12,15 @@
 			},
 			{
 				"nome": "ORDEMEXECUCAO",
-				"valor": "1"
+				"valor": "3"
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "WTA - LoginWTA"
+				"valor": "Criar variavel temporária"
 			},
 			{
 				"nome": "IDINTEGRACAOCLASSEMETODO",
-				"valor": "AutenticadorRefreshTokenApi"
+				"valor": "CriaVariavelTemporaria"
 			},
 			{
 				"nome": "IDFLUXO",
