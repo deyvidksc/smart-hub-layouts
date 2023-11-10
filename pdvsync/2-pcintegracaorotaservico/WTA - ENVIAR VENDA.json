@@ -17,7 +17,7 @@
 			"raw": "{{URL_BASE}}/winthor/varejo/v1/movimentacao/venda",
 			"query": []
 		},
-		"bodyraw": {{CLIENT_JSON}}
+		"bodyraw": "{{CLIENT_JSON}}"
 	},
 	"response": []
 }},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [

@@ -1,31 +1,90 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "72"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDVSync -Atualizar status venda"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
-    "name": "PDVSync - atualizar status vendas",
-    "request": {
-        "method": "PUT",
-        "header": [
-            {"key": "Authorization", "value": "Bearer {{TOKEN}}"}, 
+{
+	"tabela": {
+		"nome": "PCINTEGRACAOROTASERVICO",
+		"campos": [
 			{
-				"key": "Accept",
-				"value": "*/*"
+				"nome": "ID",
+				"valor": "72"
 			},
 			{
-				"key": "Content-Type",
-				"value": "application/json"
+				"nome": "IDEMPRESAAPI",
+				"valor": "PDVSync"
+			},
+			{
+				"nome": "SERVICO",
+				"valor": "PDVSync -Atualizar status venda"
+			},
+			{
+				"nome": "LAYOUTCOMUNICACAO",
+				"valor": {
+					"name": "PDVSync - atualizar status vendas",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{URL_ATUALIZAR_STATUS_VENDA}}",
+							"query": []
+						},
+						"bodyraw": [
+							{
+								"idMensagem": "{{ID_MENSAGEM}}",
+								"status": "{{STATUS_INTEGRACAO}}"
+							}
+						]
+					},
+					"response": []
+				}
+			},
+			{
+				"nome": "LAYOUTTRANSFORMACAO",
+				"valor": [
+					{
+						"operation": "default",
+						"spec": {
+							"status": 2
+						}
+					}
+				]
+			},
+			{
+				"nome": "ATIVO",
+				"valor": "S"
+			},
+			{
+				"nome": "AUTENTICADOR",
+				"valor": "N"
+			},
+			{
+				"nome": "DATASINCRONISMO",
+				"valor": ""
+			},
+			{
+				"nome": "REFRESHTOKEN",
+				"valor": ""
+			},
+			{
+				"nome": "ORDEMEXECUCAO",
+				"valor": ""
+			},
+			{
+				"nome": "WINTHORPAGINACAO",
+				"valor": "N"
 			}
-        ],
-        "url": {
-            "raw": "{{URL_ATUALIZAR_STATUS_VENDA}}",
-            "query": []
-        },
-        "bodyraw": [{ "idMensagem": "{{ID_MENSAGEM}}",  "status": "{{STATUS_INTEGRACAO}}" }]
-    },
-    "response": []
-}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : [
-		{
-			"operation": "default",
-			"spec": {
-				"status": 2
-			}
-		}
-]
-	},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : ""},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "ORDEMEXECUCAO", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+		]
+	},
+	"versaoArquivo": "1.0.0",
+	"nomeArquivo": "teste"
+}
