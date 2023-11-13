@@ -1,1 +1,41 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOVARIAVEIS", "campos" : [{"nome" : "DTULTALTER", "valor" : ""},{"nome" : "ID", "valor" : "234"},{"nome" : "CHAVE", "valor" : "{{FILIAL}}"},{"nome" : "TIPOCHAVE", "valor" : "PARAMS"},{"nome" : "TIPOVALOR", "valor" : "STRING"},{"nome" : "IDROTASERVICO", "valor" : "WTA - Buscar Produto - PDV"},{"nome" : "VALOR", "valor" : "2"},{"nome" : "CODEMPALTER", "valor" : ""} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+{
+	"tabela": {
+		"nome": "PCINTEGRACAOVARIAVEIS",
+		"campos": [
+			{
+				"nome": "DTULTALTER",
+				"valor": ""
+			},
+			{
+				"nome": "ID",
+				"valor": "234"
+			},
+			{
+				"nome": "CHAVE",
+				"valor": "{{FILIAL}}"
+			},
+			{
+				"nome": "TIPOCHAVE",
+				"valor": "PARAMS"
+			},
+			{
+				"nome": "TIPOVALOR",
+				"valor": "STRING"
+			},
+			{
+				"nome": "IDROTASERVICO",
+				"valor": "WTA - Buscar Produto - PDV"
+			},
+			{
+				"nome": "VALOR",
+				"valor": "2"
+			},
+			{
+				"nome": "CODEMPALTER",
+				"valor": ""
+			}
+		]
+	},
+	"versaoArquivo": "1.0.0",
+	"nomeArquivo": "teste"
+}
