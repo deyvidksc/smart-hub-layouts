@@ -28,7 +28,7 @@
 			},
 			{
 				"nome": "VALOR",
-				"valor": "SELECT TO_CHAR(SYSDATE - 60, 'RRRR-MM-DD\"T\"HH24:MI:SS') FROM DUAL"
+				"valor": "SELECT TO_CHAR(SYSDATE - 60,'RRRR-MM-DD\"T\"HH24:MI:SS') FROM DUAL"
 			},
 			{
 				"nome": "CODEMPALTER",
