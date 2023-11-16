@@ -3,6 +3,10 @@
 		"nome": "PCINTEGRACAOROTASERVICO",
 		"campos": [
 			{
+				"nome": "ID",
+				"valor": "77"
+			},
+			{
 				"nome": "IDEMPRESAAPI",
 				"valor": "PDVSync"
 			},
