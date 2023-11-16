@@ -16,7 +16,7 @@
 								"value": "Bearer {{TOKEN}}"
             }
         ],
-        "body": [{{IDEXTERNO}}],
+        "body": "{{IDEXTERNO}}"],
         "url": {
             "raw": "{{URL_BASE}}/api/wholesale/v1/customer/"
         }
