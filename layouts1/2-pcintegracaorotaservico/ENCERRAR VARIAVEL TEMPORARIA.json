@@ -20,4 +20,4 @@
 		"body": []
 	},
 	"response": []
-}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "29-JAN-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "29-JAN-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "ORDEMEXECUCAO", "valor" : "10"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] } }

@@ -32,4 +32,4 @@
 		}
 	},
 	"response": []
-}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "S"},{"nome" : "DATASINCRONISMO", "valor" : "11-MAR-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "S"},{"nome" : "DATASINCRONISMO", "valor" : "11-MAR-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "ORDEMEXECUCAO", "valor" : "1"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] } }

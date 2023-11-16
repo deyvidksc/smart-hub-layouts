@@ -307,4 +307,4 @@
     }
        }
   ]
-},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "08-OCT-23"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "WINTHORPAGINACAO", "valor" : "S"} ] }, "versaoArquivo" : "1.0.0", "nomeArquivo" : "teste" }
+},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "13-NOV-23"},{"nome" : "REFRESHTOKEN", "valor" : "N"},{"nome" : "ORDEMEXECUCAO", "valor" : "0"},{"nome" : "WINTHORPAGINACAO", "valor" : "S"} ] } }
