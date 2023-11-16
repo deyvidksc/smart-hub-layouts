@@ -1,23 +1,80 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "33"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "Encerrar variavel temporaria"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
-	"name": "PDV-SYNC Encerrar variavel temporaria",
-	"request": {
-		"method": "PUT", 
-		"header": [
-			{"key": "Authorization", "value": "Bearer {{TOKEN}}"},
+{
+	"tabela": {
+		"nome": "PCINTEGRACAOROTASERVICO",
+		"campos": [
 			{
-				"key": "Accept",
-				"value": "*/*"
+				"nome": "SOMENTEATUALIZARINTEGRACAOCORE",
+				"valor": "N"
 			},
 			{
-				"key": "Content-Type",
-				"value": "application/json"
+				"nome": "ID",
+				"valor": "33"
+			},
+			{
+				"nome": "IDEMPRESAAPI",
+				"valor": "PDVSYNC"
+			},
+			{
+				"nome": "SERVICO",
+				"valor": "Encerrar variavel temporaria"
+			},
+			{
+				"nome": "LAYOUTCOMUNICACAO",
+				"valor": {
+					"name": "PDV-SYNC Encerrar variavel temporaria",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{TOKEN}}"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"url": {
+							"raw": "{{BASE_URL_FECHAR_LOTE}}/{{INQUILINO}}/{{LOTE_ORIGEM}}",
+							"query": []
+						},
+						"body": []
+					},
+					"response": []
+				}
+			},
+			{
+				"nome": "LAYOUTTRANSFORMACAO",
+				"valor": ""
+			},
+			{
+				"nome": "ATIVO",
+				"valor": "S"
+			},
+			{
+				"nome": "AUTENTICADOR",
+				"valor": "N"
+			},
+			{
+				"nome": "DATASINCRONISMO",
+				"valor": "29-JAN-22"
+			},
+			{
+				"nome": "REFRESHTOKEN",
+				"valor": ""
+			},
+			{
+				"nome": "ORDEMEXECUCAO",
+				"valor": "10"
+			},
+			{
+				"nome": "WINTHORPAGINACAO",
+				"valor": "N"
 			}
-		],
-		"url": {
-			"raw": "{{BASE_URL_FECHAR_LOTE}}/{{INQUILINO}}/{{LOTE_ORIGEM}}",
-			"query": []
-		},
-		"body": []
-	},
-	"response": []
-}},{"nome" : "LAYOUTTRANSFORMACAO", "valor" : ""},{"nome" : "ATIVO", "valor" : "S"},{"nome" : "AUTENTICADOR", "valor" : "N"},{"nome" : "DATASINCRONISMO", "valor" : "29-JAN-22"},{"nome" : "REFRESHTOKEN", "valor" : ""},{"nome" : "ORDEMEXECUCAO", "valor" : "10"},{"nome" : "WINTHORPAGINACAO", "valor" : "N"} ] } }
+		]
+	}
+}

@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "45"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA -Buscar Pis/Cofins"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "SOMENTEATUALIZARINTEGRACAOCORE", "valor" : "N"},{"nome" : "ID", "valor" : "45"},{"nome" : "IDEMPRESAAPI", "valor" : "WINTHOR-WTA"},{"nome" : "SERVICO", "valor" : "WTA -Buscar Pis/Cofins"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": "WTA -Buscar Pis/Cofins",
 	"request": {
 		"method": "GET",

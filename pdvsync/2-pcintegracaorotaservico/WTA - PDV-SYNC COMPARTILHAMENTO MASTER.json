@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "36"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - PDV-SYNC Compartilhamento Master"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "SOMENTEATUALIZARINTEGRACAOCORE", "valor" : "N"},{"nome" : "ID", "valor" : "36"},{"nome" : "IDEMPRESAAPI", "valor" : "WINTHOR-WTA"},{"nome" : "SERVICO", "valor" : "WTA - PDV-SYNC Compartilhamento Master"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
     "idExterno": [
         "pdvsync-compartilhamento-9999-master"
     ],

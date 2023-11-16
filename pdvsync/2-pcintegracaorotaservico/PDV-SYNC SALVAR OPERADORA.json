@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "58"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Salvar Operadora"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "SOMENTEATUALIZARINTEGRACAOCORE", "valor" : "N"},{"nome" : "ID", "valor" : "58"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSYNC"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Salvar Operadora"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 		"name": "PDV-SYNC Salvar Operadora",
 		"request": {
 			"method": "POST",

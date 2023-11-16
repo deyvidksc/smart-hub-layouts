@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "40"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA -Buscar Filiais - Compartilhamento"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "SOMENTEATUALIZARINTEGRACAOCORE", "valor" : "N"},{"nome" : "ID", "valor" : "40"},{"nome" : "IDEMPRESAAPI", "valor" : "WINTHOR-WTA"},{"nome" : "SERVICO", "valor" : "WTA -Buscar Filiais - Compartilhamento"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": "WTA -Buscar filiais",
 	"request": {
 		"method": "GET",

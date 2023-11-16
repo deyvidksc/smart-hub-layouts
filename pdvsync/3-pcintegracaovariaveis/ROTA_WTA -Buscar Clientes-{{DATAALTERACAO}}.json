@@ -1,6 +1,1 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOVARIAVEIS", "campos" : [{"nome" : "DTULTALTER", "valor" : ""},{"nome" : "ID", "valor" : "55"},{"nome" : "CHAVE", "valor" : "{{DATAALTERACAO}}"},{"nome" : "TIPOCHAVE", "valor" : "PARAMS"},{"nome" : "TIPOVALOR", "valor" : "SELECT"},{"nome" : "IDROTASERVICO", "valor" : "WTA -Buscar Clientes"},{"nome" : "VALOR", "valor" : "SELECT
-	TO_CHAR(
-		NVL((SELECT MAX(DATACRIACAO) FROM PCINTEGRACAOCORE WHERE IDROTASERVICO = :IDROTASERVICO AND STATUS = 2), TO_DATE('01/01/1900')) -1,
-		'RRRR-MM-DD\"T\"HH24:MI:SS'
-	) DT
-FROM DUAL"},{"nome" : "CODEMPALTER", "valor" : ""} ] } }
+{ "tabela" : { "nome" : "PCINTEGRACAOVARIAVEIS", "campos" : [{"nome" : "DTULTALTER", "valor" : ""},{"nome" : "ID", "valor" : "55"},{"nome" : "CHAVE", "valor" : "{{DATAALTERACAO}}"},{"nome" : "TIPOCHAVE", "valor" : "PARAMS"},{"nome" : "TIPOVALOR", "valor" : "SELECT"},{"nome" : "IDROTASERVICO", "valor" : "WTA -BUSCAR CLIENTES"},{"nome" : "VALOR", "valor" : "SELECT TO_CHAR( NVL((SELECT MAX(DATACRIACAO) FROM PCINTEGRACAOCORE WHERE IDROTASERVICO = :IDROTASERVICO AND STATUS = 2), TO_DATE('01/01/1900')) -1, 'RRRR-MM-DD\"T\"HH24:MI:SS' ) DT FROM DUAL"},{"nome" : "CODEMPALTER", "valor" : ""} ] } }

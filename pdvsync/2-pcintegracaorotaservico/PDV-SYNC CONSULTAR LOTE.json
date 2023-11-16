@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "63"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Consultar lote"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "SOMENTEATUALIZARINTEGRACAOCORE", "valor" : "N"},{"nome" : "ID", "valor" : "63"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSYNC"},{"nome" : "SERVICO", "valor" : "PDV-SYNC Consultar lote"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": "PDV-SYNC Consultar lote",
 	"request": {
 		"method": "GET",

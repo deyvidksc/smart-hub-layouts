@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "41"},{"nome" : "IDEMPRESAAPI", "valor" : "winthor/wta"},{"nome" : "SERVICO", "valor" : "WTA - Buscar Perfil - PADRÃO"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "SOMENTEATUALIZARINTEGRACAOCORE", "valor" : "N"},{"nome" : "ID", "valor" : "41"},{"nome" : "IDEMPRESAAPI", "valor" : "WINTHOR-WTA"},{"nome" : "SERVICO", "valor" : "WTA - Buscar Perfil - PADRÃO"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
   "idExterno": [
     "pdvsync-perfil-0",
     "pdvsync-perfil-1",

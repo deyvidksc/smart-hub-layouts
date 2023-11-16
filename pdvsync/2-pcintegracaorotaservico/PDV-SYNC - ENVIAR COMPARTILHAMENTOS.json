@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "37"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDV-SYNC - Enviar compartilhamentos"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "SOMENTEATUALIZARINTEGRACAOCORE", "valor" : "N"},{"nome" : "ID", "valor" : "37"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSYNC"},{"nome" : "SERVICO", "valor" : "PDV-SYNC - Enviar compartilhamentos"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": " ",
 	"request": {
 		"method": "POST",

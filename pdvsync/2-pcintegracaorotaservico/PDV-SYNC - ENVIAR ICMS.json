@@ -1,4 +1,4 @@
-{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "ID", "valor" : "48"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSync"},{"nome" : "SERVICO", "valor" : "PDV-SYNC - Enviar ICMS"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
+{ "tabela" : { "nome" : "PCINTEGRACAOROTASERVICO", "campos" : [{"nome" : "SOMENTEATUALIZARINTEGRACAOCORE", "valor" : "N"},{"nome" : "ID", "valor" : "48"},{"nome" : "IDEMPRESAAPI", "valor" : "PDVSYNC"},{"nome" : "SERVICO", "valor" : "PDV-SYNC - Enviar ICMS"},{"nome" : "LAYOUTCOMUNICACAO", "valor" : {
 	"name": "Enviar ICMS",
 	"request": {
 		"method": "POST",
