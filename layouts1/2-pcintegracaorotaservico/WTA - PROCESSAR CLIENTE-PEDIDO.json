@@ -19,7 +19,7 @@
         "body": [
                 {
                     "key": "jsonDadosTransformados",
-                    "value": {{JSONDADOSTRANSFORMADOS}}
+                    "value": "{{JSONDADOSTRANSFORMADOS}}"
                 } 
             ],        
         "url": {
