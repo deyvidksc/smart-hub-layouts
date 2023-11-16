@@ -19,7 +19,7 @@
     "body": [
       {
         "key": "chaveNfe",
-        "value": {{CHAVENFE}}
+        "value": "{{CHAVENFE}}"
       },
       {
         "key": "tipoNotaDeposito",
