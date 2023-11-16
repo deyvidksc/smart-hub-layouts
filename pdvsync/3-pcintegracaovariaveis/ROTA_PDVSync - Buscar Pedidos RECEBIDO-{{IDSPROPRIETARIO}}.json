@@ -1,0 +1,9 @@
+{ "tabela" : { "nome" : "PCINTEGRACAOVARIAVEIS", "campos" : [{"nome" : "DTULTALTER", "valor" : ""},{"nome" : "ID", "valor" : "386"},{"nome" : "CHAVE", "valor" : "{{IDSPROPRIETARIO}}"},{"nome" : "TIPOCHAVE", "valor" : "BODY"},{"nome" : "TIPOVALOR", "valor" : "SELECT"},{"nome" : "IDROTASERVICO", "valor" : "PDVSync - Buscar Pedidos RECEBIDO"},{"nome" : "VALOR", "valor" : "
+	SELECT IDSPROPRIETARIO FROM(
+		SELECT SYS_CONNECT_BY_PATH(CODIGO,'&listIdProprietario=') IDSPROPRIETARIO
+	    FROM PCFILIAL p
+	    CONNECT BY PRIOR CODIGO  < CODIGO
+	    ORDER BY LENGTH(IDSPROPRIETARIO) DESC
+	)
+	WHERE ROWNUM = 1
+  "},{"nome" : "CODEMPALTER", "valor" : ""} ] } }
