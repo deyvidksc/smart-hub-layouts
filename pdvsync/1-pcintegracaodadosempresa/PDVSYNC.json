@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "DFSEQ_PCINTEGRACAODADOSEMPRESA.NEXTVAL"
+				"valor": "PDVSYNC"
 			},
 			{
 				"nome": "NOME",
