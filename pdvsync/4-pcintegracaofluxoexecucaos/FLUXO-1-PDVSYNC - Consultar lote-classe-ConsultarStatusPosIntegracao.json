@@ -12,19 +12,19 @@
 			},
 			{
 				"nome": "ORDEMEXECUCAO",
-				"valor": "5"
+				"valor": "7"
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "PDV-SYNC - Enviar Pis-Cofins"
+				"valor": "PDVSYNC - Consultar lote"
 			},
 			{
 				"nome": "IDINTEGRACAOCLASSEMETODO",
-				"valor": "EnvioIntegracaoStatusRecebidoLote"
+				"valor": "ConsultarStatusPosIntegracao"
 			},
 			{
 				"nome": "IDFLUXO",
-				"valor": "6"
+				"valor": "1"
 			},
 			{
 				"nome": "ATIVO",
@@ -32,7 +32,7 @@
 			},
 			{
 				"nome": "IDDEPENDENTE",
-				"valor": "WTA -Buscar Pis/Cofins"
+				"valor": ""
 			}
 		]
 	}

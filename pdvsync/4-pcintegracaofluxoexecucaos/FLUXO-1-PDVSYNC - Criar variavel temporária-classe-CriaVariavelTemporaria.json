@@ -16,15 +16,15 @@
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "WTA - LoginWTA"
+				"valor": "PDVSYNC - Criar variavel temporária"
 			},
 			{
 				"nome": "IDINTEGRACAOCLASSEMETODO",
-				"valor": "AutenticadorRefreshTokenApi"
+				"valor": "CriaVariavelTemporaria"
 			},
 			{
 				"nome": "IDFLUXO",
-				"valor": "19"
+				"valor": "1"
 			},
 			{
 				"nome": "ATIVO",

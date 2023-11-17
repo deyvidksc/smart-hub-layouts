@@ -4,15 +4,15 @@
 		"campos": [
 			{
 				"nome": "ID",
-				"valor": "PDVSync - Buscar Pedidos CANCELADA"
+				"valor": "PDVSYNC - Buscar Pedidos CANCELADA"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
-				"valor": "PDVSync"
+				"valor": "PDVSYNC"
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "PDVSync - Buscar Pedidos CANCELADA"
+				"valor": "PDVSYNC - Buscar Pedidos CANCELADA"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
