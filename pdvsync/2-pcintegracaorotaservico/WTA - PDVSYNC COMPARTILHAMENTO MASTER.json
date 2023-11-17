@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - Compartilhamento Master"
+				"valor": "WTA - PDVSYNC Compartilhamento Master"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,7 +16,7 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "WTA - Compartilhamento Master"
+				"valor": "WTA - PDVSYNC Compartilhamento Master"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
