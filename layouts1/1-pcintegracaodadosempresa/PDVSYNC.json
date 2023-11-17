@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "4"
+				"valor": "PDVSYNC"
 			},
 			{
 				"nome": "NOME",
@@ -35,7 +35,5 @@
 				"valor": "15-OCT-23"
 			}
 		]
-	},
-	"versaoArquivo": "1.0.0",
-	"nomeArquivo": "teste"
+	} 
 }
