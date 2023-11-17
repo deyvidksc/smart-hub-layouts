@@ -12,19 +12,19 @@
 			},
 			{
 				"nome": "ORDEMEXECUCAO",
-				"valor": "5"
+				"valor": "4"
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "PDVSYNC - Salvar Perfil"
+				"valor": "PDVSYNC - RAC LoginPDVSync"
 			},
 			{
 				"nome": "IDINTEGRACAOCLASSEMETODO",
-				"valor": "EnvioIntegracaoStatusRecebido"
+				"valor": "AutenticadorRefreshTokenApi"
 			},
 			{
 				"nome": "IDFLUXO",
-				"valor": "4"
+				"valor": "2"
 			},
 			{
 				"nome": "ATIVO",
@@ -32,7 +32,7 @@
 			},
 			{
 				"nome": "IDDEPENDENTE",
-				"valor": "WTA - Buscar Perfil - PADRÃO"
+				"valor": ""
 			}
 		]
 	}

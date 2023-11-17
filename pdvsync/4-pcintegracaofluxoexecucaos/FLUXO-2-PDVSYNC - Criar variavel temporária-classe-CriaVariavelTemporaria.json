@@ -12,19 +12,19 @@
 			},
 			{
 				"nome": "ORDEMEXECUCAO",
-				"valor": "5"
+				"valor": "3"
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "PDVSYNC - Salvar Perfil"
+				"valor": "PDVSYNC - Criar variavel temporária"
 			},
 			{
 				"nome": "IDINTEGRACAOCLASSEMETODO",
-				"valor": "EnvioIntegracaoStatusRecebido"
+				"valor": "CriaVariavelTemporaria"
 			},
 			{
 				"nome": "IDFLUXO",
-				"valor": "4"
+				"valor": "2"
 			},
 			{
 				"nome": "ATIVO",
@@ -32,7 +32,7 @@
 			},
 			{
 				"nome": "IDDEPENDENTE",
-				"valor": "WTA - Buscar Perfil - PADRÃO"
+				"valor": ""
 			}
 		]
 	}

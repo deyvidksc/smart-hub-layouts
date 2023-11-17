@@ -16,7 +16,7 @@
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "PDVSYNC - Salvar Perfil"
+				"valor": "PDVSYNC - Enviar lojas"
 			},
 			{
 				"nome": "IDINTEGRACAOCLASSEMETODO",
@@ -24,7 +24,7 @@
 			},
 			{
 				"nome": "IDFLUXO",
-				"valor": "4"
+				"valor": "2"
 			},
 			{
 				"nome": "ATIVO",
@@ -32,7 +32,7 @@
 			},
 			{
 				"nome": "IDDEPENDENTE",
-				"valor": "WTA - Buscar Perfil - PADRÃO"
+				"valor": "WTA -Buscar Filiais - Lojas"
 			}
 		]
 	}

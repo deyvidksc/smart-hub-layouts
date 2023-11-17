@@ -12,19 +12,19 @@
 			},
 			{
 				"nome": "ORDEMEXECUCAO",
-				"valor": "5"
+				"valor": "2"
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "PDVSYNC - Salvar Perfil"
+				"valor": "WTA - PDVSYNC Compartilhamento Master"
 			},
 			{
 				"nome": "IDINTEGRACAOCLASSEMETODO",
-				"valor": "EnvioIntegracaoStatusRecebido"
+				"valor": "BuscaRotaServicoNaoPaginada"
 			},
 			{
 				"nome": "IDFLUXO",
-				"valor": "4"
+				"valor": "1"
 			},
 			{
 				"nome": "ATIVO",
@@ -32,7 +32,7 @@
 			},
 			{
 				"nome": "IDDEPENDENTE",
-				"valor": "WTA - Buscar Perfil - PADRÃO"
+				"valor": ""
 			}
 		]
 	}
