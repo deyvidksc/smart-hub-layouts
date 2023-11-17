@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - Buscar Pis-Cofins"
+				"valor": "WTA - Buscar Pis Cofins"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,12 +16,12 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "WTA - Buscar Pis-Cofins"
+				"valor": "WTA - Buscar Pis Cofins"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "WTA - Buscar Pis-Cofins",
+					"name": "WTA - Buscar Pis Cofins",
 					"request": {
 						"method": "GET",
 						"header": [
