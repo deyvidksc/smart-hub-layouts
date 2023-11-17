@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "33"
+				"valor": "PDVSYN - Salvar Clientes"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,14 +16,14 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "Encerrar variavel temporaria"
+				"valor": "PDVSYN - Salvar Clientes"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "PDV-SYNC Encerrar variavel temporaria",
+					"name": "PDVSYN - Salvar Clientes",
 					"request": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [
 							{
 								"key": "Authorization",
@@ -39,17 +39,33 @@
 							}
 						],
 						"url": {
-							"raw": "{{BASE_URL_FECHAR_LOTE}}/{{INQUILINO}}/{{LOTE_ORIGEM}}",
-							"query": []
+							"raw": "{{URL_ENVIAR_CLIENTE}}",
+							"query": [
+								{
+									"key": "pageSize",
+									"value": "{{PAGE_SIZE}}"
+								},
+								{
+									"key": "page",
+									"value": "{{PAGE}}"
+								}
+							]
 						},
-						"body": []
+						"bodyraw": "{{CLIENT_JSON}}"
 					},
 					"response": []
 				}
 			},
 			{
 				"nome": "LAYOUTTRANSFORMACAO",
-				"valor": ""
+				"valor": [
+					{
+						"operation": "default",
+						"spec": {
+							"status": 2
+						}
+					}
+				]
 			},
 			{
 				"nome": "ATIVO",
@@ -69,7 +85,7 @@
 			},
 			{
 				"nome": "ORDEMEXECUCAO",
-				"valor": "10"
+				"valor": "2"
 			},
 			{
 				"nome": "WINTHORPAGINACAO",

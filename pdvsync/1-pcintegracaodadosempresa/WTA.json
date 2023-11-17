@@ -8,11 +8,11 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "winthor-wta"
+				"valor": "WINTHOR-WTA"
 			},
 			{
 				"nome": "NOME",
-				"valor": "winthor-wta"
+				"valor": "WINTHOR-WTA"
 			},
 			{
 				"nome": "URLBASE",
@@ -35,7 +35,5 @@
 				"valor": "15-OCT-23"
 			}
 		]
-	},
-	"versaoArquivo": "1.0.0",
-	"nomeArquivo": "teste"
+	} 
 }
