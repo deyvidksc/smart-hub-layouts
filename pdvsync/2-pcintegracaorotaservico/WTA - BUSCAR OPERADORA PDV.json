@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - Buscar status pedido"
+				"valor": "WTA - Buscar Operadora PDV"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,12 +16,12 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "WTA - Buscar status pedido"
+				"valor": "WTA - Buscar Operadora PDV"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "WTA - Buscar status pedido",
+					"name": "WTA - Buscar Operadora PDV",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -35,35 +35,23 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_BASE}}/api/wholesale/v1/orders/list",
+							"raw": "{{URL_BASE}}/winthor/venda/v0/operadoras",
 							"query": [
 								{
-									"key": "pageSize",
+									"key": "tamanho",
 									"value": "{{PAGE_SIZE}}"
 								},
 								{
-									"key": "page",
+									"key": "pagina",
 									"value": "{{PAGE}}"
 								},
 								{
-									"key": "lastChange",
-									"value": "{{DATAALTERACAO}}"
+									"key": "ultimaAlteracao",
+									"value": "{{LAST_CHANGE}}"
 								},
 								{
-									"key": "branchId",
-									"value": "{{FILIAL}}"
-								},
-								{
-									"key": "daysOfSearch",
-									"value": "{{DAYSOFSEARCH}}"
-								},
-								{
-									"key": "orderStatus",
-									"value": "{{ORDERSTATUS}}"
-								},
-								{
-									"key": "integrationOrigin",
-									"value": "PDVSYNC"
+									"key": "tipoOperacao",
+									"value": "01, 02"
 								}
 							]
 						}
@@ -79,7 +67,7 @@
 						"spec": {
 							"items": {
 								"*": {
-									"idExterno": "=concat('pdvsync-status-prevenda-',@(1,orderId),'-',@(1,lastChange))"
+									"idExterno": "=concat('pdvsync-operadora-', @(1,codcob),'-',@(1,codfilial),'-',@(1,ultimaAlteracao))"
 								}
 							}
 						}
@@ -89,17 +77,27 @@
 						"spec": {
 							"items": {
 								"*": {
-									"idExterno": "idExterno[]",
-									"orderId": "items.[&1].idRetaguarda",
-									"branchId": "items.[&1].idProprietario",
-									"orderStatus": {
-										"C": {
-											"#0": "items.[&3].situacao",
-											"#CANCELADA": "items.[&3].situacaoPreVenda"
+									"codcob": "items[&1].idRetaguarda",
+									"cobranca": "items[&1].descricao",
+									"codigoOperadora": "items[&1].administradora",
+									"codigoTef": "items[&1].codigoTef",
+									"tipoOperacaoTef": {
+										"codTipoTef": {
+											"01": {
+												"#1": "items[&4].tipoTransacao"
+											},
+											"02": {
+												"#0": "items[&4].tipoTransacao"
+											}
+										}
+									},
+									"idExterno": "idExterno",
+									"codfilial": {
+										"99": {
+											"#{{MASTER_ID_PROPRIETARIO}}": "items[&3].idProprietario"
 										},
-										"F": {
-											"#1": "items.[&3].situacao",
-											"#RESGATADA": "items.[&3].situacaoPreVenda"
+										"*": {
+											"@(2,codfilial)": "items[&3].idProprietario"
 										}
 									}
 								}
@@ -113,7 +111,9 @@
 							"items[]": {
 								"*": {
 									"idInquilino": "{{ID_INQUILINO}}",
-									"loteOrigem": "{{LOTE_ORIGEM}}"
+									"loteOrigem": "{{LOTE_ORIGEM}}",
+									"situacao": 1,
+									"codigoTef": "0"
 								}
 							}
 						}
@@ -142,7 +142,7 @@
 			},
 			{
 				"nome": "WINTHORPAGINACAO",
-				"valor": "N"
+				"valor": "S"
 			}
 		]
 	}

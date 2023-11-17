@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - Buscar Usuario Operador"
+				"valor": "WTA - Buscar Pis-Cofins"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,12 +16,12 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "WTA - Buscar Usuario Operador"
+				"valor": "WTA - Buscar Pis-Cofins"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "WTA - Buscar Usuario Operador",
+					"name": "WTA - Buscar Pis-Cofins",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -35,18 +35,18 @@
 							}
 						],
 						"url": {
-							"raw": "{{URL_BASE}}/winthor/ferramenta/usuario/v1/listar/detalhes",
+							"raw": "{{URL_BASE}}/winthor/tributacao/v0/saida/piscofins/consultar",
 							"query": [
 								{
-									"key": "pageSize",
+									"key": "tamanho",
 									"value": "{{PAGE_SIZE}}"
 								},
 								{
-									"key": "page",
+									"key": "pagina",
 									"value": "{{PAGE}}"
 								},
 								{
-									"key": "lastChange",
+									"key": "ultAlter",
 									"value": "{{LAST_CHANGE}}"
 								}
 							]
@@ -59,24 +59,21 @@
 				"nome": "LAYOUTTRANSFORMACAO",
 				"valor": [
 					{
-						"operation": "default",
-						"spec": {
-							"_attr_access": "items",
-							"items[]": {
-								"*": {
-									"dtUltAlter": "1900-01-01T00:00:00"
-								}
-							}
-						}
-					},
-					{
 						"operation": "modify-overwrite-beta",
 						"spec": {
 							"items": {
 								"*": {
-									"idExterno": "=concat('pdvsync-usuario-operador-', @(1,matricula),'-', @(1,dtUltAlter))",
-									"cpf_array": "=split('\\D',@(1,cpf))",
-									"cpf_": "=join('', @(1,cpf_array))"
+									"CEM": 100,
+									"idExterno": "=concat('pdvsync-piscofins-', @(1,codTribPisCofins),'-', @(1,dtUltAlt))",
+									"valorInverso": "=divide(1, @(1,CEM))",
+									"aliquotaPisPercentual": "=divideAndRound(4, @(1,aliquotaPis), @(1,valorInverso))",
+									"aliquotaCofinsPercentual": "=divideAndRound(4, @(1,aliquotaCofins), @(1,valorInverso))",
+									"aliquotaPisPercentualStr": "=toString(@(1,aliquotaPisPercentual))",
+									"aliquotaCofinsPercentualStr": "=toString(@(1,aliquotaCofinsPercentual))",
+									"aliquotaPisPercentualArr": "=split('\\.',@(1,aliquotaPisPercentualStr))",
+									"aliquotaCofinsPercentualArr": "=split('\\.',@(1,aliquotaCofinsPercentualStr))",
+									"aliquotaPis": "=join(',', @(1,aliquotaPisPercentualArr))",
+									"aliquotaCofins": "=join(',', @(1,aliquotaCofinsPercentualArr))"
 								}
 							}
 						}
@@ -87,34 +84,13 @@
 							"items": {
 								"*": {
 									"idExterno": "idExterno",
-									"matricula": "items.[&1].idRetaguarda",
-									"situacao": {
-										"ATIVO": {
-											"#1": "items.[&3].situacao"
-										},
-										"*": {
-											"#0": "items.[&3].situacao"
-										}
-									},
-									"login": "items[&1].login",
-									"senha": "items[&1].senhaCriptografada",
-									"nome": "items[&1].nome",
-									"dtUltAlter": "items[&1].dtUltAlter",
-									"cpf_": [
-										"items[&1].cpf"
+									"cst": [
+										"items[&1].cstPis",
+										"items[&1].cstCofins"
 									],
-									"perfil": {
-										"FISCALDECAIXA": {
-											"#0": "items.[&3].idRetaguardaPerfil",
-											"#1": "items.[&3].administrador"
-										},
-										"OPERADORDECAIXA": {
-											"#1": "items.[&3].idRetaguardaPerfil"
-										},
-										"VENDEDOR": {
-											"#2": "items.[&3].idRetaguardaPerfil"
-										}
-									}
+									"aliquotaPis": "items[&1].aliquotaPis",
+									"aliquotaCofins": "items[&1].aliquotaCofins",
+									"codTribPisCofins": "items[&1].idRetaguarda"
 								}
 							}
 						}
@@ -128,8 +104,7 @@
 									"idInquilino": "{{ID_INQUILINO}}",
 									"idProprietario": "{{MASTER_ID_PROPRIETARIO}}",
 									"loteOrigem": "{{LOTE_ORIGEM}}",
-									"administrador": 0,
-									"senhaCriptografada": "winthor"
+									"situacao": 1
 								}
 							}
 						}
@@ -146,7 +121,7 @@
 			},
 			{
 				"nome": "DATASINCRONISMO",
-				"valor": "14-NOV-23"
+				"valor": "23-MAY-22"
 			},
 			{
 				"nome": "REFRESHTOKEN",
@@ -154,7 +129,7 @@
 			},
 			{
 				"nome": "ORDEMEXECUCAO",
-				"valor": "4"
+				"valor": "3"
 			},
 			{
 				"nome": "WINTHORPAGINACAO",

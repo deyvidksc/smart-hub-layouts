@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - Dados pagamento"
+				"valor": "WTA - Buscar Perfil PADRÃO"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,39 +16,53 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "WTA - Dados pagamento"
+				"valor": "WTA - Buscar Perfil PADRÃO"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
 					"idExterno": [
-						"pdvsync-dado-complementar-pagto-11",
-						"pdvsync-dado-complementar-pagto-12"
+						"pdvsync-perfil-0",
+						"pdvsync-perfil-1",
+						"pdvsync-perfil-2"
 					],
 					"_attr_access": "itens",
 					"itens": [
 						[
 							{
-								"descricao": "Código de autorização",
-								"tipoDadoComplementar": 1,
-								"obrigatorio": 1,
-								"tamanho": 25,
-								"situacao": 1,
+								"nome": "Administrador WTA",
+								"situacao": 0,
+								"tipoPerfil": "Administrador",
+								"sequencial": 0,
+								"id": 0,
 								"idInquilino": "{{ID_INQUILINO}}",
-								"idRetaguarda": "11",
+								"idRetaguarda": 0,
 								"idProprietario": "{{MASTER_ID_PROPRIETARIO}}",
 								"loteOrigem": "{{LOTE_ORIGEM}}"
 							}
 						],
 						[
 							{
-								"descricao": "NSU/DOC",
-								"tipoDadoComplementar": 1,
-								"obrigatorio": 1,
-								"tamanho": 25,
-								"situacao": 1,
+								"nome": "Operador WTA",
+								"situacao": 0,
+								"tipoPerfil": "Operador",
+								"sequencial": 0,
+								"id": 1,
 								"idInquilino": "{{ID_INQUILINO}}",
-								"idRetaguarda": "12",
+								"idRetaguarda": 1,
+								"idProprietario": "{{MASTER_ID_PROPRIETARIO}}",
+								"loteOrigem": "{{LOTE_ORIGEM}}"
+							}
+						],
+						[
+							{
+								"nome": "Vendedor WTA",
+								"situacao": 0,
+								"tipoPerfil": "Vendedor ",
+								"sequencial": 0,
+								"id": 2,
+								"idInquilino": "{{ID_INQUILINO}}",
+								"idRetaguarda": 2,
 								"idProprietario": "{{MASTER_ID_PROPRIETARIO}}",
 								"loteOrigem": "{{LOTE_ORIGEM}}"
 							}
