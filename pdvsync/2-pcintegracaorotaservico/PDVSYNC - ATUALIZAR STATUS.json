@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "PDVSYNC - Atualiza Status"
+				"valor": "PDVSYNC - Atualizar Status"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,12 +16,12 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "PDVSYNC - Atualiza Status"
+				"valor": "PDVSYNC - Atualizar Status"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "PDVSYNC - atualizar status",
+					"name": "PDVSYNC - Atualizar Status",
 					"request": {
 						"method": "PUT",
 						"header": [
