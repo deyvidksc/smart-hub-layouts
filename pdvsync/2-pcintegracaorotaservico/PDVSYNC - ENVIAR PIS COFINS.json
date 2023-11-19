@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "PDVSYNC - Enviar Pis-Cofins"
+				"valor": "PDVSYNC - Enviar Pis Cofins"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,12 +16,12 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "PDVSYNC - Enviar Pis-Cofins"
+				"valor": "PDVSYNC - Enviar Pis Cofins"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "PDVSYNC - Enviar Pis-Cofins",
+					"name": "PDVSYNC - Enviar Pis Cofins",
 					"request": {
 						"method": "POST",
 						"header": [
