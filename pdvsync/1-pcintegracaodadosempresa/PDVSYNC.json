@@ -21,11 +21,7 @@
 			{
 				"nome": "TOKENCLIENTE",
 				"valor": ""
-			},
-			{
-				"nome": "CODFILIAL",
-				"valor": ""
-			},
+			}, 
 			{
 				"nome": "WTA",
 				"valor": "N"
