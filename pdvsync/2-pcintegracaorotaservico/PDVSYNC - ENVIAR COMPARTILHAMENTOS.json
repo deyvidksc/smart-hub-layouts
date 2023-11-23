@@ -7,8 +7,7 @@
 				"valor": "N"
 			},
 			{
-				"nome": "ID",
-				"valor": "PDVSYNC - Enviar compartilhamentos"
+				"nome": "ID","valor": "PDVSYNC - Enviar compartilhamentos"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -72,14 +71,6 @@
 			{
 				"nome": "REFRESHTOKEN",
 				"valor": ""
-			},
-			{
-				"nome": "ORDEMEXECUCAO",
-				"valor": "1"
-			},
-			{
-				"nome": "WINTHORPAGINACAO",
-				"valor": "N"
 			}
 		]
 	}

@@ -151,14 +151,6 @@
 			{
 				"nome": "REFRESHTOKEN",
 				"valor": ""
-			},
-			{
-				"nome": "ORDEMEXECUCAO",
-				"valor": "4"
-			},
-			{
-				"nome": "WINTHORPAGINACAO",
-				"valor": "S"
 			}
 		]
 	}
