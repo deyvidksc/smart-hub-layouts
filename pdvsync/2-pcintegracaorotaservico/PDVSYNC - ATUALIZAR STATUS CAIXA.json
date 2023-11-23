@@ -21,7 +21,7 @@
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "PDVSync - atualizar status caixa",
+					"name": "PDVSYNC - Atualizar status caixa",
 					"request": {
 						"method": "PUT",
 						"header": [
