@@ -1,7 +1,11 @@
 {
 	"tabela": {
 		"nome": "PCINTEGRACAOFLUXOEXECUCAO",
-		"campos": [ {"nome" : "ID", "valor": ""},
+		"campos": [
+			{
+				"nome": "ID",
+				"valor": ""
+			},
 			{
 				"nome": "DTULTALTER",
 				"valor": ""
