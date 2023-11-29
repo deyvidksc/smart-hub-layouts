@@ -3,6 +3,14 @@
 		"nome": "PCINTEGRACAOFLUXOEXECUCAO",
 		"campos": [
 			{
+				"nome": "ID",
+				"valor": ""
+			},
+			{
+				"nome": "ID",
+				"valor": ""
+			},
+			{
 				"nome": "DTULTALTER",
 				"valor": ""
 			},
