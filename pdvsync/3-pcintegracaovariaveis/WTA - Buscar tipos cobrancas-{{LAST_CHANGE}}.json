@@ -8,11 +8,11 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - ENVIAR MOVIMENTAÇÃO CAIXA-{{CLIENT_JSON}}"
+				"valor": "WTA - BUSCAR TIPOS COBRANCAS-{{LAST_CHANGE}}"
 			},
 			{
 				"nome": "CHAVE",
-				"valor": "{{CLIENT_JSON}}"
+				"valor": "{{LAST_CHANGE}}"
 			},
 			{
 				"nome": "TIPOCHAVE",
@@ -20,15 +20,15 @@
 			},
 			{
 				"nome": "TIPOVALOR",
-				"valor": "STRING"
+				"valor": "SELECT"
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "WTA - ENVIAR MOVIMENTAÇÃO CAIXA"
+				"valor": "WTA - BUSCAR TIPOS COBRANCAS"
 			},
 			{
 				"nome": "VALOR",
-				"valor": ":PCINTEGRACAOCORE.DADOSTRANSFORMADOS"
+				"valor": "SELECT TO_CHAR( NVL((SELECT MAX(DATACRIACAO) FROM PCINTEGRACAOCORE WHERE IDROTASERVICO = :IDROTASERVICO AND STATUS=2), TO_DATE('01/01/1900')) -1, 'RRRR-MM-DD\"T\"HH24:MI:SS' ) DT FROM DUAL"
 			},
 			{
 				"nome": "CODEMPALTER",

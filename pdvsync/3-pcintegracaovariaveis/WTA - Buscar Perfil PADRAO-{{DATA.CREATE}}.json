@@ -8,11 +8,11 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - BUSCAR PERFIL PADRÃO-{{ID_INQUILINO}}"
+				"valor": "WTA - BUSCAR PERFIL PADRAO-{{DATA.CREATE}}"
 			},
 			{
 				"nome": "CHAVE",
-				"valor": "{{ID_INQUILINO}}"
+				"valor": "{{DATA.CREATE}}"
 			},
 			{
 				"nome": "TIPOCHAVE",
@@ -20,15 +20,15 @@
 			},
 			{
 				"nome": "TIPOVALOR",
-				"valor": "STRING"
+				"valor": "SELECT"
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "WTA - BUSCAR PERFIL PADRÃO"
+				"valor": "WTA - BUSCAR PERFIL PADRAO"
 			},
 			{
 				"nome": "VALOR",
-				"valor": "BqI1W6bsls184yJBshzs"
+				"valor": "SELECT TO_CHAR(SYSDATE, 'RRRR-MM-DD') || 'T' || TO_CHAR(SYSDATE, 'HH24:MI:SS') || '.480Z' FROM DUAL"
 			},
 			{
 				"nome": "CODEMPALTER",

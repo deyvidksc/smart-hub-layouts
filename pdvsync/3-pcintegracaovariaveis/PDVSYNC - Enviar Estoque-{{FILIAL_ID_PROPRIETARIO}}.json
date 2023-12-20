@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "PDVSYNC - ENVIAR ESTOQUE DISPONÍVEL-{{FILIAL_ID_PROPRIETARIO}}"
+				"valor": "PDVSYNC - ENVIAR ESTOQUE DISPONiVEL-{{FILIAL_ID_PROPRIETARIO}}"
 			},
 			{
 				"nome": "CHAVE",
@@ -24,7 +24,7 @@
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "PDVSYNC - ENVIAR ESTOQUE DISPONÍVEL"
+				"valor": "PDVSYNC - ENVIAR ESTOQUE DISPONiVEL"
 			},
 			{
 				"nome": "VALOR",

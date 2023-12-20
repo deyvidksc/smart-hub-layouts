@@ -8,11 +8,11 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - BUSCAR PERFIL PADRÃO-{{MASTER_ID_PROPRIETARIO}}"
+				"valor": "WTA - BUSCAR PERFIL PADRAO-{{ID_INQUILINO}}"
 			},
 			{
 				"nome": "CHAVE",
-				"valor": "{{MASTER_ID_PROPRIETARIO}}"
+				"valor": "{{ID_INQUILINO}}"
 			},
 			{
 				"nome": "TIPOCHAVE",
@@ -24,11 +24,11 @@
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "WTA - BUSCAR PERFIL PADRÃO"
+				"valor": "WTA - BUSCAR PERFIL PADRAO"
 			},
 			{
 				"nome": "VALOR",
-				"valor": "9999"
+				"valor": "BqI1W6bsls184yJBshzs"
 			},
 			{
 				"nome": "CODEMPALTER",

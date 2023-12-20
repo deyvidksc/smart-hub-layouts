@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - BUSCAR PERFIL PADRÃO-{{DATA.UPDATE}}"
+				"valor": "WTA - BUSCAR PERFIL PADRAO-{{DATA.UPDATE}}"
 			},
 			{
 				"nome": "CHAVE",
@@ -24,7 +24,7 @@
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "WTA - BUSCAR PERFIL PADRÃO"
+				"valor": "WTA - BUSCAR PERFIL PADRAO"
 			},
 			{
 				"nome": "VALOR",

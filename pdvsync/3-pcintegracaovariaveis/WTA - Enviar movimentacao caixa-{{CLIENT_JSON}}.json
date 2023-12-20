@@ -8,11 +8,11 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - BUSCAR PERFIL PADRÃO-{{DATA.CREATE}}"
+				"valor": "WTA - ENVIAR MOVIMENTACAO CAIXA-{{CLIENT_JSON}}"
 			},
 			{
 				"nome": "CHAVE",
-				"valor": "{{DATA.CREATE}}"
+				"valor": "{{CLIENT_JSON}}"
 			},
 			{
 				"nome": "TIPOCHAVE",
@@ -20,15 +20,15 @@
 			},
 			{
 				"nome": "TIPOVALOR",
-				"valor": "SELECT"
+				"valor": "STRING"
 			},
 			{
 				"nome": "IDROTASERVICO",
-				"valor": "WTA - BUSCAR PERFIL PADRÃO"
+				"valor": "WTA - ENVIAR MOVIMENTACAO CAIXA"
 			},
 			{
 				"nome": "VALOR",
-				"valor": "SELECT TO_CHAR(SYSDATE, 'RRRR-MM-DD') || 'T' || TO_CHAR(SYSDATE, 'HH24:MI:SS') || '.480Z' FROM DUAL"
+				"valor": ":PCINTEGRACAOCORE.DADOSTRANSFORMADOS"
 			},
 			{
 				"nome": "CODEMPALTER",
