@@ -29,7 +29,7 @@
 					"itens": [
 						[
 							{
-								"descricao": "Código de autorização",
+								"descricao": "Código de autorizacAo",
 								"tipoDadoComplementar": 1,
 								"obrigatorio": 1,
 								"tamanho": 25,

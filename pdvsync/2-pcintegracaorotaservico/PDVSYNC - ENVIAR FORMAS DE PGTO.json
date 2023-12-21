@@ -21,7 +21,7 @@
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "PDVSYNC - Enviar formas de pagamentos (condições de pgmt)",
+					"name": "PDVSYNC - Enviar formas de pagamentos (condicões de pgmt)",
 					"request": {
 						"method": "POST",
 						"header": [

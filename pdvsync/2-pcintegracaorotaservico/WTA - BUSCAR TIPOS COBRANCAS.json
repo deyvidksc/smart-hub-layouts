@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - Buscar tipos cobranças"
+				"valor": "WTA - Buscar tipos cobrancas"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,12 +16,12 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "WTA - Buscar tipos cobranças"
+				"valor": "WTA - Buscar tipos cobrancas"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "WTA - Buscar tipos cobranças",
+					"name": "WTA - Buscar tipos cobrancas",
 					"request": {
 						"method": "GET",
 						"header": [

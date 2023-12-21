@@ -21,7 +21,7 @@
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "PDVSYNC - Enviar planos de pagamentos (condições de pgmt)",
+					"name": "PDVSYNC - Enviar planos de pagamentos (condicões de pgmt)",
 					"request": {
 						"method": "POST",
 						"header": [

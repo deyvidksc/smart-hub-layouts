@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "WTA - Enviar movimentação caixa"
+				"valor": "WTA - Enviar movimentacAo caixa"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,12 +16,12 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "WTA - Enviar movimentação caixa"
+				"valor": "WTA - Enviar movimentacao caixa"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "WTA - Enviar movimentação caixa",
+					"name": "WTA - Enviar movimentacAo caixa",
 					"request": {
 						"method": "POST",
 						"header": [
