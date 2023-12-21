@@ -8,7 +8,7 @@
 			},
 			{
 				"nome": "ID",
-				"valor": "PDVSYNC - Enviar Estoque Disponível"
+				"valor": "PDVSYNC - Enviar Estoque Disponivel"
 			},
 			{
 				"nome": "IDEMPRESAAPI",
@@ -16,12 +16,12 @@
 			},
 			{
 				"nome": "SERVICO",
-				"valor": "PDVSYNC - Enviar Estoque Disponível"
+				"valor": "PDVSYNC - Enviar Estoque Disponivel"
 			},
 			{
 				"nome": "LAYOUTCOMUNICACAO",
 				"valor": {
-					"name": "PDVSYNC - Enviar Estoque Disponível",
+					"name": "PDVSYNC - Enviar Estoque Disponivel",
 					"request": {
 						"method": "POST",
 						"header": [
